@@ -51,6 +51,7 @@
           pkgs.git
           pkgs.gh
           pkgs.lazygit
+          pkgs.nowplaying-cli
         ];
 
         homebrew ={
