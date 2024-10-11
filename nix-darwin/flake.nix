@@ -8,11 +8,6 @@
 
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
 
-    home-manager = {
-      url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-     
     # Optional: Declarative tap management
     homebrew-core = {
       url = "github:homebrew/homebrew-core";
@@ -25,7 +20,7 @@
  
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, home-manager, ...}:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, ...}:
   let
     configuration = { pkgs, config, ... }: {
 
@@ -150,12 +145,7 @@
             autoMigrate = true;
           };
         }
-        home-manager.darwinModules.home-manager {
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-          home-manager.users.lalocornejo = import ./home.nix;
-        }
-      ];
+     ];
     };
 
     # Expose the package set, including overlays, for convenience.
