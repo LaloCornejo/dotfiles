@@ -47,7 +47,6 @@
           pkgs.gh
           pkgs.lazygit
           pkgs.nowplaying-cli
-          pkgs.sketchybar
         ];
 
         homebrew ={
@@ -60,12 +59,16 @@
             "rustdesk"
             "nikitabobko/tap/aerospace"
           ];
+          taps = [
+            "FelixKratz/formulae"
+          ];
           brews = [
             "imagemagick"
             "croc"
             "yt-dlp"
             "streamlink"
             "tldr"
+            "sketchybar"
           ];
           onActivation.cleanup = "zap";
         };
