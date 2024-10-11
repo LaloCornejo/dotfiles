@@ -52,6 +52,7 @@
           pkgs.gh
           pkgs.lazygit
           pkgs.nowplaying-cli
+          pkgs.sketchybar
         ];
 
         homebrew ={
