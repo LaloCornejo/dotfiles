@@ -112,7 +112,6 @@
       nixpkgs.hostPlatform = "x86_64-darwin";
 
       users.users.lalocornejo.home = "/Users/lalocornejo";
-      home-manager.backupFileExtension = "backup";
       nix.configureBuildUsers = true;
       nix.useDaemon = true;
 
