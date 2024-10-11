@@ -180,4 +180,4 @@ export GOPATH=$HOME/go
 # Update PATH to include GOPATH and GOROOT binaries
 export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
 
-alias nix-darwin = "/Users/lalocornejo/dotfiles/nix-darwin/"
+alias nx-dw = "z /Users/lalocornejo/dotfiles/nix-darwin/"
