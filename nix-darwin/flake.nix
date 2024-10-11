@@ -128,7 +128,7 @@
         finder.FXPreferredViewStyle = "clmv";
         loginwindow.LoginwindowText = "LÆLÖ's";
         screencapture.location = "/Users/lalocornejo/Downloads";
-        screensaver.askForPasswordDelay = 10;
+        screensaver.askForPasswordDelay = 0;
       };
     };
   in

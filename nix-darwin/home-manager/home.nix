@@ -6,21 +6,22 @@
 {
   home.username = "lalocornejo";
   home.homeDirectory = "/Users/lalocornejo";
-  home.stateVersion = "24.05";
+  home.stateVersion = "24.11";
 
   home.packages = [
 
   ];
 
   home.file = {
-    ".zshrc".source = /Users/lalocornejo/dotfiles/zshrc/.zshrc;
-    ".config/nvim".source = /Users/lalocornejo/dotfiles/nvim;
-    ".config/aerospace".source = /Users/lalocornejo/dotfiles/aerospace;
-    ".config/btop".source = /Users/lalocornejo/dotfiles/btop;
-    ".config/fabric".source = /Users/lalocornejo/dotfiles/fabric;
-    ".config/nix".source = /Users/lalocornejo/dotfiles/nix;
-    ".config/nix-darwin".source = /Users/lalocornejo/dotfiles/nix-darwin;
-    ".config/sketchybar".source = /Users/lalocornejo/dotfiles/sketchybar;
+    ".zshrc".source = /Users/lalocornejo/.dotfiles/zshrc/.zshrc;
+    ".config/nvim".source = /Users/lalocornejo/.dotfiles/nvim;
+    ".config/aerospace".source = /Users/lalocornejo/.dotfiles/aerospace;
+    ".config/btop".source = /Users/lalocornejo/.dotfiles/btop;
+    ".config/fabric".source = /Users/lalocornejo/.dotfiles/fabric;
+    ".config/nix".source = /Users/lalocornejo/.dotfiles/nix;
+    ".config/nix-darwin".source = /Users/lalocornejo/.dotfiles/nix-darwin;
+    ".config/sketchybar".source = /Users/lalocornejo/.dotfiles/sketchybar;
+    ".config/home-manager".source = /Users/lalocornejo/.dotfiles/nix-darwin/home-manager/;
   };
 
   home.sessionVariables = {
