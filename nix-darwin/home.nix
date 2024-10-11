@@ -20,7 +20,6 @@
     ".config/fabric".source = /Users/lalocornejo/dotfiles/fabric;
     ".config/nix".source = /Users/lalocornejo/dotfiles/nix;
     ".config/nix-darwin".source = /Users/lalocornejo/dotfiles/nix-darwin;
-    ".config/raycast".source = /Users/lalocornejo/dotfiles/raycast;
   };
 
   home.sessionVariables = {
