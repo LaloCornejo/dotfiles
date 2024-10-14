@@ -24,20 +24,21 @@ return {
   -- },
 
     {
-    "zbirenbaum/copilot-cmp",
-    event = "InsertEnter",
-    config = function()
-      require("copilot_cmp").setup()
-    end,
-    dependencies = {
-      "zbirenbaum/copilot.lua",
-      cmd = "Copilot",
+    "github/copilot.vim",
+      lazy = false,
+      keys = { "<leader>ce" },
       config = function()
-        require("copilot").setup({
-          suggestion = { enabled = true },
-          panel = { enabled = false },
-        })
+          vim.cmd("Copilot setup")  -- Initialize Copilot
+          vim.keymap.set("i", "<C-j>", 'copilot#Accept("\\<CR>")', {
+              expr = true,
+              replace_keycodes = false,
+          })
+          vim.keymap.set("n", "<leader>cd", ":Copilot disable <CR>", {})
+          vim.keymap.set("n", "<leader>ce", ":Copilot enable <CR>", {})
       end,
     },
+
+  {
+    'wakatime/vim-wakatime', lazy = false
   },
 }

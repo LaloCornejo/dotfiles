@@ -50,20 +50,22 @@
           pkgs.gh
           pkgs.lazygit
           pkgs.nowplaying-cli
+          pkgs.karabiner-elements
         ];
 
         homebrew ={
           enable = true;
           casks = [
-            "hammerspoon"
             "iina"
             "BetterTouchTool"
             "wireshark"
             "rustdesk"
             "nikitabobko/tap/aerospace"
+            "iglance"
           ];
           taps = [
             "FelixKratz/formulae"
+            "zackelia/formulae"
           ];
           brews = [
             "imagemagick"
@@ -73,6 +75,8 @@
             "tldr"
             "sketchybar"
             "borders"
+            "bclm"
+            "node"
           ];
           onActivation.cleanup = "zap";
         };
@@ -127,7 +131,7 @@
         dock.mru-spaces = false;
         finder.AppleShowAllExtensions = true;
         finder.FXPreferredViewStyle = "clmv";
-        loginwindow.LoginwindowText = "LÆLÖ's";
+        loginwindow.LoginwindowText = "=^._.^=";
         screencapture.location = "/Users/lalocornejo/Downloads";
         screensaver.askForPasswordDelay = 0;
       };

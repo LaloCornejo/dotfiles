@@ -6,7 +6,7 @@
 {
   home.username = "lalocornejo";
   home.homeDirectory = "/Users/lalocornejo";
-  home.stateVersion = "24.05";
+  home.stateVersion = "24.11";
 
   home.packages = [
 
@@ -21,6 +21,7 @@
     ".config/nix".source = /Users/lalocornejo/.dotfiles/nix;
     ".config/nix-darwin".source = /Users/lalocornejo/.dotfiles/nix-darwin;
     ".config/home-manager/home.nix".source = /Users/lalocornejo/.dotfiles/nix-darwin/home.nix;
+    ".config/karabiner".source = /Users/lalocornejo/.dotfiles/karabiner;
   };
 
   home.sessionVariables = {

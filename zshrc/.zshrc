@@ -97,7 +97,7 @@ export GOPATH=$HOME/go
 # Update PATH to include GOPATH and GOROOT binaries
 export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
 
-alias nxdw="z /Users/lalocornejo/.dotfiles/nix-darwin/"
+alias nxdw="nvim /Users/lalocornejo/.dotfiles/nix-darwin/flake.nix"
 
 # Lazy load zsh-autosuggestions
 zsh_autosuggestions_load() {
