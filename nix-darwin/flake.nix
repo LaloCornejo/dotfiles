@@ -61,7 +61,6 @@
             "wireshark"
             "rustdesk"
             "nikitabobko/tap/aerospace"
-            "iglance"
           ];
           taps = [
             "FelixKratz/formulae"
@@ -77,6 +76,7 @@
             "borders"
             "bclm"
             "node"
+            "speedread"
           ];
           onActivation.cleanup = "zap";
         };
