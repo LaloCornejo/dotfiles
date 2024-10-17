@@ -11,7 +11,7 @@ ZSH_THEME="robbyrussell"
 DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to disable marking untracked files under VCS as dirty.
-DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="false"
 
 # Which plugins would you like to load?
 plugins=(git zsh-autosuggestions)
@@ -26,6 +26,9 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
   export EDITOR='nvim'
 fi
+
+# ---- SKHD ----
+skhd & disown
 
 # ---- FZF -----
 
@@ -106,3 +109,5 @@ zsh_autosuggestions_load() {
 
 autoload -Uz add-zsh-hook
 add-zsh-hook precmd zsh_autosuggestions_load
+
+clear

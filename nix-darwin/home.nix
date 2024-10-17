@@ -6,7 +6,7 @@
 {
   home.username = "lalocornejo";
   home.homeDirectory = "/Users/lalocornejo";
-  home.stateVersion = "24.11";
+  home.stateVersion = "24.05";
 
   home.packages = [
 
@@ -15,7 +15,9 @@
   home.file = {
     ".zshrc".source = /Users/lalocornejo/.dotfiles/zshrc/.zshrc;
     ".config/nvim".source = /Users/lalocornejo/.dotfiles/nvim;
-    ".config/aerospace".source = /Users/lalocornejo/.dotfiles/aerospace;
+    ".config/yabai".source = /Users/lalocornejo/.dotfiles/yabai;
+    ".config/skhd".source = /Users/lalocornejo/.dotfiles/skhd;
+    # ".config/aerospace".source = /Users/lalocornejo/.dotfiles/aerospace;
     ".config/btop".source = /Users/lalocornejo/.dotfiles/btop;
     ".config/fabric".source = /Users/lalocornejo/.dotfiles/fabric;
     ".config/nix".source = /Users/lalocornejo/.dotfiles/nix;

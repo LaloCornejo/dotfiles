@@ -51,6 +51,7 @@
           pkgs.lazygit
           pkgs.nowplaying-cli
           pkgs.karabiner-elements
+          pkgs.yabai
         ];
 
         homebrew ={
@@ -60,11 +61,12 @@
             "BetterTouchTool"
             "wireshark"
             "rustdesk"
-            "nikitabobko/tap/aerospace"
+            # "nikitabobko/tap/aerospace"
           ];
           taps = [
             "FelixKratz/formulae"
             "zackelia/formulae"
+            "koekeishiya/formulae"
           ];
           brews = [
             "imagemagick"
@@ -72,11 +74,11 @@
             "yt-dlp"
             "streamlink"
             "tldr"
-            "sketchybar"
             "borders"
             "bclm"
             "node"
             "speedread"
+            "skhd"
           ];
           onActivation.cleanup = "zap";
         };
