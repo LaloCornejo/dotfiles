@@ -1,24 +1,5 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
-
-# Path to your Oh My Zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
-
-# Set name of the theme to load
-ZSH_THEME="robbyrussell"
-
-# Uncomment the following line to disable bi-weekly auto-update checks.
-DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to disable marking untracked files under VCS as dirty.
-DISABLE_UNTRACKED_FILES_DIRTY="false"
-
-# Which plugins would you like to load?
-plugins=(git zsh-autosuggestions)
-
-source $ZSH/oh-my-zsh.sh
-
 # User configuration
+	eval "$(starship init zsh)"
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -101,13 +82,5 @@ export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
 
 alias nxdw="nvim /Users/lalocornejo/.dotfiles/nix-darwin/flake.nix"
-
-# Lazy load zsh-autosuggestions
-zsh_autosuggestions_load() {
-  source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-}
-
-autoload -Uz add-zsh-hook
-add-zsh-hook precmd zsh_autosuggestions_load
 
 clear
