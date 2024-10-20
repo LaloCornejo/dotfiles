@@ -58,7 +58,6 @@
           enable = true;
           casks = [
             "iina"
-            "BetterTouchTool"
             "wireshark"
             "rustdesk"
             # "nikitabobko/tap/aerospace"
@@ -74,7 +73,6 @@
             "yt-dlp"
             "streamlink"
             "tldr"
-            "borders"
             "bclm"
             "node"
             "speedread"

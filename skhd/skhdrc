@@ -15,13 +15,13 @@ alt + shift - k : yabai -m window --warp nort
 alt + shift - l : yabai -m window --warp east
 
 # resize window
-# alt + shift - 0x1B : yabai -m window --resize left:-50:0 || yabai -m window --resize right:-50:0
-# alt + shift - 0x18 : yabai -m window --resize left:50:0 || yabai -m window --resize right:50:0
+alt + shift - 0x1B : yabai -m window --resize left:-50:0 || yabai -m window --resize right:-50:0
+alt + shift - 0x18 : yabai -m window --resize left:50:0 || yabai -m window --resize right:50:0
 
-cmd + shift - h : yabai -m window --resize left:-50:0
-cmd + shift - j : yabai -m window --resize down:0:50
-cmd + shift - k : yabai -m window --resize up:0:50
-cmd + shift - l : yabai -m window --resize right:50:0
+# cmd + shift - h : yabai -m window --resize left:-50:0
+# cmd + shift - j : yabai -m window --resize down:0:50
+# cmd + shift - k : yabai -m window --resize up:0:50
+# cmd + shift - l : yabai -m window --resize right:50:0
 
 # move window to desktop and follow focus
 # alt + shift - 1 : yabai -m window --space 1; yabai -m space --focus 1

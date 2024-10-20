@@ -8,9 +8,6 @@ else
   export EDITOR='nvim'
 fi
 
-# ---- SKHD ----
-skhd & disown
-
 # ---- FZF -----
 
 # Lazy load fzf
@@ -82,5 +79,3 @@ export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
 
 alias nxdw="nvim /Users/lalocornejo/.dotfiles/nix-darwin/flake.nix"
-
-clear
