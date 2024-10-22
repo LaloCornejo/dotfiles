@@ -23,7 +23,6 @@
     ".config/nix".source = /Users/lalocornejo/.dotfiles/nix;
     ".config/nix-darwin".source = /Users/lalocornejo/.dotfiles/nix-darwin;
     ".config/home-manager/home.nix".source = /Users/lalocornejo/.dotfiles/nix-darwin/home.nix;
-    ".config/karabiner".source = /Users/lalocornejo/.dotfiles/karabiner;
   };
 
   home.sessionVariables = {
