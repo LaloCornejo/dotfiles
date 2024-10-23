@@ -15,9 +15,9 @@
   home.file = {
     ".zshrc".source = /Users/lalocornejo/.dotfiles/zshrc/.zshrc;
     ".config/nvim".source = /Users/lalocornejo/.dotfiles/nvim;
-    ".config/yabai".source = /Users/lalocornejo/.dotfiles/yabai;
-    ".config/skhd".source = /Users/lalocornejo/.dotfiles/skhd;
-    # ".config/aerospace".source = /Users/lalocornejo/.dotfiles/aerospace;
+   #  ".config/yabai".source = /Users/lalocornejo/.dotfiles/yabai;
+   #  ".config/skhd".source = /Users/lalocornejo/.dotfiles/skhd;
+    ".config/aerospace".source = /Users/lalocornejo/.dotfiles/aerospace;
     ".config/btop".source = /Users/lalocornejo/.dotfiles/btop;
     ".config/fabric".source = /Users/lalocornejo/.dotfiles/fabric;
     ".config/nix".source = /Users/lalocornejo/.dotfiles/nix;

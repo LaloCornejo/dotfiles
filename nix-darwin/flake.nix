@@ -51,7 +51,7 @@
           pkgs.lazygit
           pkgs.nowplaying-cli
           pkgs.karabiner-elements
-          pkgs.yabai
+          # pkgs.yabai
         ];
 
         homebrew ={
@@ -60,7 +60,7 @@
             "iina"
             "wireshark"
             "rustdesk"
-            # "nikitabobko/tap/aerospace"
+            "nikitabobko/tap/aerospace"
           ];
           taps = [
             "FelixKratz/formulae"
@@ -76,7 +76,7 @@
             "bclm"
             "node"
             "speedread"
-            "skhd"
+            # "skhd"
           ];
           onActivation.cleanup = "zap";
         };
