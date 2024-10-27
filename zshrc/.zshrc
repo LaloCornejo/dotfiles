@@ -1,5 +1,26 @@
+# Enable Powerlevel10k instant prompt
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# Path to your Oh My Zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+
+# Set name of the theme to load
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
+DISABLE_AUTO_UPDATE="false"
+
+# Uncomment the following line to disable marking untracked files under VCS as dirty.
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Which plugins would you like to load?
+plugins=(git zsh-autosuggestions)
+
+source $ZSH/oh-my-zsh.sh
+
 # User configuration
-	eval "$(starship init zsh)"
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -35,17 +56,6 @@ export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git
 # --- setup fzf theme ---
 fg="#CBE0F0"
 bg="#011628"
-bg_highlight="#143652"
-purple="#B388FF"
-blue="#06BCE4"
-cyan="#2CF9ED"
-
-export FZF_DEFAULT_OPTS="--color=fg:${fg},bg:${bg},hl:${purple},fg+:${fg},bg+:${bg_highlight},hl+:${purple},info:${blue},prompt:${cyan},pointer:${cyan},marker:${cyan},spinner:${cyan},header:${cyan}"
-
-# ----- Bat (better cat) -----
-
-export BAT_THEME=tokyonight_night
-
 export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always --line-range :500 {}'"
 
 # ---- Eza (better ls) -----
@@ -71,11 +81,17 @@ z() {
 
 alias cd="z"
 
-# Golang environment variables
-export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
-
 # Update PATH to include GOPATH and GOROOT binaries
 export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
 
-alias nxdw="nvim /Users/lalocornejo/.dotfiles/nix-darwin/flake.nix"
+alias nxdw="z /Users/lalocornejo/.dotfiles/nix-darwin/"
+# Lazy load zsh-autosuggestions
+zsh_autosuggestions_load() {
+  source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+}
+autoload -Uz add-zsh-hook
+add-zsh-hook precmd zsh_autosuggestions_load
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

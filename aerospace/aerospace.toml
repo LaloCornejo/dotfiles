@@ -62,11 +62,11 @@ on-focus-changed = ['move-mouse window-lazy-center']
 #                 Monitor pattern is the same as for 'workspace-to-monitor-force-assignment'.
 #                 See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [workspace-to-monitor-force-assignment]
-1 = 'main'
-2 = 'main'
-3 = 'main'
-4 = 'main'
-5 = 'main'
+Dev = 'main'
+OwO = 'main'
+':)' = 'main'
+Trash = 'main'
+Message = 'main'
 6 = 'secondary'
 7 = 'secondary'
 8 = 'secondary'
@@ -133,11 +133,11 @@ alt-shift-minus = 'resize smart -50'
 alt-shift-equal = 'resize smart +50'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-alt-1 = 'workspace 1'
-alt-2 = 'workspace 2'
-alt-3 = 'workspace 3'
-alt-4 = 'workspace 4'
-alt-5 = 'workspace 5'
+alt-1 = 'workspace Dev'
+alt-2 = 'workspace OwO'
+alt-3 = 'workspace :)'
+alt-4 = 'workspace Trash'
+alt-5 = 'workspace Message'
 alt-6 = 'workspace 6'
 alt-7 = 'workspace 7'
 alt-8 = 'workspace 8'
@@ -145,11 +145,11 @@ alt-9 = 'workspace 9'
 alt-0 = 'workspace 10'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-alt-shift-1 = ['move-node-to-workspace 1', 'workspace 1']
-alt-shift-2 = ['move-node-to-workspace 2', 'workspace 2']
-alt-shift-3 = ['move-node-to-workspace 3', 'workspace 3']
-alt-shift-4 = ['move-node-to-workspace 4', 'workspace 4']
-alt-shift-5 = ['move-node-to-workspace 5', 'workspace 5']
+alt-shift-1 = ['move-node-to-workspace Dev', 'workspace Dev']
+alt-shift-2 = ['move-node-to-workspace OwO', 'workspace OwO']
+alt-shift-3 = ['move-node-to-workspace :)', 'workspace :)']
+alt-shift-4 = ['move-node-to-workspace Trash', 'workspace Trash']
+alt-shift-5 = ['move-node-to-workspace Message', 'workspace Message']
 alt-shift-6 = ['move-node-to-workspace 6', 'workspace 6']
 alt-shift-7 = ['move-node-to-workspace 7', 'workspace 7']
 alt-shift-8 = ['move-node-to-workspace 8', 'workspace 8']
@@ -203,33 +203,32 @@ alt-shift-r = ['exec-and-forget /opt/homebrew/bin/sketchybar --reload']
 
 [[on-window-detected]]
 if.app-id = 'company.thebrowser.Browser'
-run = ['move-node-to-workspace 2']
+run = ['move-node-to-workspace OwO']
 
 [[on-window-detected]]
 if.app-id = 'dev.warp.Warp-Stable'
-run = ['move-node-to-workspace 1']
+run = ['move-node-to-workspace Dev']
 
 [[on-window-detected]]
 if.app-id = 'com.colliderli.iina'
-run = ['move-node-to-workspace 3']
+run = ['move-node-to-workspace :)']
 
 [[on-window-detected]]
 if.app-id = 'md.obsidian'
-run = ['move-node-to-workspace 4']
+run = ['move-node-to-workspace Trash']
 
 [[on-window-detected]]
 if.app-id = 'com.tdesktop.Telegram'
-run = ['move-node-to-workspace 5']
+run = ['move-node-to-workspace Message']
 
 [[on-window-detected]]
 if.app-id = 'com.hnc.Discord'
-run = ['move-node-to-workspace 5']
+run = ['move-node-to-workspace Message']
 
 [[on-window-detected]]
 if.app-id = 'com.apple.mail'
-run = ['move-node-to-workspace 5']
+run = ['move-node-to-workspace Message']
 
 [[on-window-detected]]
 if.app-id = 'com.apple.MobileSMS'
-run = ['move-node-to-workspace 5']
-
+run = ['move-node-to-workspace Message']

@@ -61,6 +61,7 @@
             "wireshark"
             "rustdesk"
             "nikitabobko/tap/aerospace"
+            "BetterTouchTool"
           ];
           taps = [
             "FelixKratz/formulae"
