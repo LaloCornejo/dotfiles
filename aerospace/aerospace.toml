@@ -76,10 +76,10 @@ Message = 'main'
 [gaps]
 inner.horizontal = 10
 inner.vertical = 10
-outer.top = 3
-outer.left = 10
+outer.top = 5
+outer.left = 12
 outer.bottom = 5
-outer.right = 10
+outer.right = 12
 
 # See https://nikitabobko.github.io/AeroSpace/guide#exec-env-vars
 [exec] # Again, you don't need to copy all config sections to your config.
