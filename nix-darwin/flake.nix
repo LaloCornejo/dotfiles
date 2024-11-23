@@ -51,7 +51,7 @@
           pkgs.lazygit
           pkgs.nowplaying-cli
           pkgs.karabiner-elements
-          # pkgs.yabai
+          pkgs.cmatrix
         ];
 
         homebrew ={
