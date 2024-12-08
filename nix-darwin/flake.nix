@@ -52,6 +52,7 @@
           pkgs.nowplaying-cli
           pkgs.karabiner-elements
           pkgs.cmatrix
+          pkgs.tmux
         ];
 
         homebrew ={
