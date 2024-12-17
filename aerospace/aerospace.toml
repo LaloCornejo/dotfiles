@@ -16,7 +16,7 @@ after-startup-command = [
     # JankyBorders has a built-in detection of already running process,
     # so it won't be run twice on AeroSpace restart
     # 'exec-and-forget /opt/homebrew/opt/sketchybar/bin/sketchybar',
-    'exec-and-forget borders'
+    # 'exec-and-forget borders'
 ]
 
 exec-on-workspace-change = [
@@ -31,13 +31,13 @@ exec-on-workspace-change = [
 start-at-login = true
 
 # Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
-enable-normalization-flatten-containers = false
-enable-normalization-opposite-orientation-for-nested-containers = false
+enable-normalization-flatten-containers = true 
+enable-normalization-opposite-orientation-for-nested-containers = true
 
 # See: https://nikitabobko.github.io/AeroSpace/guide#layouts
 # The 'accordion-padding' specifies the size of accordion padding
 # You can set 0 to disable the padding feature
-accordion-padding = 300
+accordion-padding = 250
 
 # Possible values: tiles|accordion
 default-root-container-layout = 'tiles'
@@ -76,9 +76,9 @@ Message = 'main'
 [gaps]
 inner.horizontal = 10
 inner.vertical = 10
-outer.top = 5
+outer.top = 3
 outer.left = 12
-outer.bottom = 5
+outer.bottom = 3
 outer.right = 12
 
 # See https://nikitabobko.github.io/AeroSpace/guide#exec-env-vars
@@ -168,13 +168,13 @@ alt-shift-semicolon = 'mode service'
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 
 # disabled hide window
-# cmd-h = []
+cmd-h = []
 # rotate hangul and english
 
 [mode.service.binding]
 esc = ['reload-config', 'mode main']
 r = ['flatten-workspace-tree', 'mode main'] # reset layout
-#s = ['layout sticky tiling', 'mode main'] # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
+s = ['layout sticky tiling', 'mode main'] # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
 f = [
     'layout floating tiling',
     'mode main',
