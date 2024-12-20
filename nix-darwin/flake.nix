@@ -137,9 +137,6 @@
         loginwindow.LoginwindowText = "=^._.^=";
         screencapture.location = "/Users/lalocornejo/Downloads";
         screensaver.askForPassword = false;
-        screensaver.showClock = true;
-        screensaver.showOnScreen = "AllScreens";
-        screensaver.timeout = 300;
         sound.volume = 0.5;
       };
     };
