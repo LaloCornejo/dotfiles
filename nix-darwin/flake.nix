@@ -8,9 +8,6 @@
 
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
 
-    home-manager.url = "github:nix-community/home-manager";
-    home-manager.inputs.nixpkgs.follows = "nixpkgs";
-
     # Optional: Declarative tap management
     homebrew-core = {
       url = "github:homebrew/homebrew-core";
@@ -53,6 +50,9 @@
           pkgs.karabiner-elements
           pkgs.cmatrix
           pkgs.tmux
+          pkgs.stow
+          pkgs.ripgrep
+          pkgs.fd
         ];
 
         homebrew ={
@@ -63,6 +63,7 @@
             "rustdesk"
             "nikitabobko/tap/aerospace"
             "BetterTouchTool"
+            "homerow"
           ];
           taps = [
             "FelixKratz/formulae"
@@ -135,7 +136,11 @@
         finder.FXPreferredViewStyle = "clmv";
         loginwindow.LoginwindowText = "=^._.^=";
         screencapture.location = "/Users/lalocornejo/Downloads";
-        screensaver.askForPasswordDelay = 0;
+        screensaver.askForPassword = false;
+        screensaver.showClock = true;
+        screensaver.showOnScreen = "AllScreens";
+        screensaver.timeout = 300;
+        sound.volume = 0.5;
       };
     };
   in
@@ -156,15 +161,6 @@
             # Automatically migrate existing Homebrew installations
             autoMigrate = true;
           };
-        }
-        home-manager.darwinModules.home-manager
-        {
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-          home-manager.users.lalocornejo = import ./home.nix;
-
-          # Optionally, use home-manager.extraSpecialArgs to pass
-          # arguments to home.nix
         }
       ];
     };
