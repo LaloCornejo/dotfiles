@@ -65,14 +65,14 @@ key-mapping.preset = 'qwerty'
 #                 Monitor pattern is the same as for 'workspace-to-monitor-force-assignment'.
 #                 See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [workspace-to-monitor-force-assignment]
-1 = 'main'
-2 = 'main'
-3 = 'main'
-4 = 'main'
-5 = 'main'
-6 = 'secondary'
-7 = 'secondary'
-8 = 'secondary'
+1 = 'main' # Terminal
+2 = 'main' # Browser
+3 = 'main' # Video
+4 = 'main' # Notes
+5 = 'main' # Chat
+6 = 'main' # Mail
+7 = 'main' # Music
+8 = 'main' # Remote
 9 = 'secondary'
 10 = 'secondary'
 
@@ -251,3 +251,11 @@ run = ['move-node-to-workspace 5']
 [[on-window-detected]]
 if.app-id = 'com.apple.Music'
 run = ['move-node-to-workspace 7']
+
+[[on-window-detected]]
+if.app-id = 'com.carriez.rustdesk'
+run = ['move-node-to-workspace 8']
+
+[[on-window-detected]]
+if.app-id = 'tv.parsec.www'
+run = ['move-node-to-workspace 8']
