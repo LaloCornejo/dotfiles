@@ -3,8 +3,23 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh 
+alias reload-zsh="source ~/.zshrc"
+alias edit-zsh="nvim ~/.dotfiles/zshrc/.zshrc"
+
+# HISTORY SETUP 
+HISTFILE=~/.zsh_history
+SAVEHIST=1000
+HISTSIZE=999
+setopt share_history
+setopt hist_expire_dups_first
+setopt hist_ignore_dups
+setopt hist_verify
 
 # Set name of the theme to load
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -60,7 +75,7 @@ export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always --line-range :500 {}'"
 
 # ---- Eza (better ls) -----
 
-alias ls="eza --color=always --long --git --icons=always"
+alias ls="eza --color=always --long --git --icons=always --tree --sort=extension --group-directories-first --time-style=long-iso"
 export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
 
 # Lazy load for thefuck
@@ -83,9 +98,9 @@ alias cd="z"
 
 alias yy="yazi"
 
-export GOPATH=$HOME/go
+#  export GOPATH=$HOME/go
 # Update PATH to include GOPATH and GOROOT binaries
-export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
+# export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
 
 alias nxdw="z /Users/lalocornejo/.dotfiles/nix-darwin/"
 # Lazy load zsh-autosuggestions
@@ -97,3 +112,5 @@ add-zsh-hook precmd zsh_autosuggestions_load
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+arttime -a unix
