@@ -112,7 +112,7 @@ add-zsh-hook precmd zsh_autosuggestions_load
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Create tmp directory if it doesn't exist
-mkdir -p ~/tmp
+# mkdir -p ~/tmp
 
 # # ARTTIME HOMESCREEN :)
 # 
