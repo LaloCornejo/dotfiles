@@ -13,8 +13,8 @@ after-login-command = []
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
-     'exec-and-forget /opt/homebrew/opt/borders/bin/borders active_color=0xCFEBBF83 inactive_color=0x33434c5e width=4.0'
-#     'exec-and-forget /opt/homebrew/opt/sketchybar/bin/sketchybar'
+     'exec-and-forget /usr/local/bin/borders 	style=round	width=8.0 glow=0xff8A2BE2	active_color=0xff8A2BE2',
+    'exec-and-forget /usr/local/bin/sketchybar'
 ]
 
 exec-on-workspace-change = [
@@ -59,8 +59,8 @@ key-mapping.preset = 'qwerty'
 
 # Gaps between windows (inner-*) and between monitor edges (outer-*).
 # Possible values:
-# - Constant:     gaps.outer.top = 8
-# - Per monitor:  gaps.outer.top = [{ monitor.main = 16 }, { monitor."some-pattern" = 32 }, 24]
+# - Constant:     gaps.outer.top = 40
+# - Per monitor:  gaps.outer.top = 40
 #                 In this example, 24 is a default value when there is no match.
 #                 Monitor pattern is the same as for 'workspace-to-monitor-force-assignment'.
 #                 See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
@@ -187,13 +187,13 @@ l = ['join-with right', 'mode main']
 alt-shift-r = ['exec-and-forget /opt/homebrew/bin/sketchybar --reload']
 
 b = [
-   'exec-and-forget ~/.dotfiles/aerospace/presentation.sh on',
+   'exec-and-forget ~/.config/aerospace/presentation.sh on',
    'exec-and-forget sketchybar --bar height=0',
    'exec-and-forget sketchybar --trigger hide_message',
    'mode main'
 ]
 shift-b = [
-   'exec-and-forget ~/.dotfiles/aerospace/presentation.sh off',
+   'exec-and-forget ~/.config/aerospace/presentation.sh off',
    'exec-and-forget sketchybar --bar height=36',
    'exec-and-forget sketchybar --trigger hide_message',
    'mode main'

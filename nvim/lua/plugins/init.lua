@@ -132,6 +132,6 @@ return {
     'wakatime/vim-wakatime', lazy = false
   },
   {
-    'wellle/context.vim', lazy = false
+    'airblade/vim-gitgutter', lazy = false
   },
 }

@@ -6,12 +6,12 @@ if [ "$#" -ne 1 ]; then
 fi
 
 PRESENTATION=$1
-CONFIG_FILE="/Users/lalocornejo/.dotfiles/aerospace/presentation.sh"
+CONFIG_FILE="/Users/lalocornejo/.dotfiles/aerospace/aerospace.toml"
 
 if [ "$PRESENTATION" == "on" ]; then
-    sed -i "" "s/outer\.top = .*/outer.top = 40
+    sed -i "" "s/outer\.top = .*/outer.top = 3/" "$CONFIG_FILE"
     echo "Presentation mode enabled"
 else
-    sed -i "" "s/outer\.top = .*/outer.top = 40
+    sed -i "" "s/outer\.top = .*/outer.top = 40/" "$CONFIG_FILE"
     echo "Presentation mode disabled"
 fi

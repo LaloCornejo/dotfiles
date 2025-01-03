@@ -29,7 +29,7 @@ DISABLE_AUTO_UPDATE="false"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Which plugins would you like to load?
-plugins=(git)
+plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -73,7 +73,7 @@ export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always --line-range :500 {}'"
 
 # ---- Eza (better ls) -----
 
-alias ls="eza --color=always --long --git --icons=always --tree --sort=extension --group-directories-first --time-style=long-iso"
+alias ls="eza --color=always --long --git --icons=always --sort=size --group-directories-first --time-style=long-iso"
 export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
 
 # Lazy load for thefuck
@@ -124,3 +124,8 @@ add-zsh-hook precmd zsh_autosuggestions_load
 #     arttime -a unix 
 #     touch ~/tmp/.arttime_last_run
 # fi
+export PATH="$HOME/.cargo/bin:$PATH"
+
+twitch() {
+  streamlink --twitch-disable-ads twitch.tv/$1 best & 
+}
