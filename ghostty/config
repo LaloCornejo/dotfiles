@@ -1,7 +1,7 @@
-theme = rose-pine
+theme = Snazzy
 background = #0b000b
 background-blur-radius = 20
-background-opacity = .55
+background-opacity = .45
 font-family = JetBrains Nerdfot Mono
 font-size = 20
 font-thicken = true

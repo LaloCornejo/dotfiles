@@ -1,1 +1,0 @@
-aerospace/reload_config.sh

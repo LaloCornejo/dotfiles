@@ -13,7 +13,7 @@ after-login-command = []
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
-     'exec-and-forget /usr/local/bin/borders 	style=round	width=8.0 glow=0xff8A2BE2	active_color=0xff8A2BE2',
+     # 'exec-and-forget /usr/local/bin/borders 	style=round	width=8.0 glow=0xff8A2BE2	active_color=0xff8A2BE2',
     'exec-and-forget /usr/local/bin/sketchybar'
 ]
 
@@ -37,13 +37,13 @@ on-focus-changed = [
 start-at-login = true
 
 # Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
-enable-normalization-flatten-containers = true 
-enable-normalization-opposite-orientation-for-nested-containers = true
+enable-normalization-flatten-containers = false
+enable-normalization-opposite-orientation-for-nested-containers = false
 
 # See: https://nikitabobko.github.io/AeroSpace/guide#layouts
 # The 'accordion-padding' specifies the size of accordion padding
 # You can set 0 to disable the padding feature
-accordion-padding = 250
+accordion-padding = 200
 
 # Possible values: tiles|accordion
 default-root-container-layout = 'tiles'
@@ -73,16 +73,16 @@ key-mapping.preset = 'qwerty'
 6 = 'main' # Mail
 7 = 'main' # Music
 8 = 'main' # Remote
-9 = 'secondary'
+9 = 'main' # VM Machines
 10 = 'secondary'
 
 [gaps]
 inner.horizontal = 10
 inner.vertical = 10
-outer.top = 40
-outer.left = 12
-outer.bottom = 7
-outer.right = 12
+outer.top = 45
+outer.left = 10
+outer.bottom = 5
+outer.right = 10
 
 [exec] # Again, you don't need to copy all config sections to your config.
 inherit-env-vars = true # If you don't touch "exec" section,
@@ -163,7 +163,7 @@ alt-shift-semicolon = 'mode service'
 
 
 # disabled hide window
-#cmd-h = []
+# cmd-h = []
 
 [mode.service.binding]
 esc = ['reload-config', 'mode main']
@@ -222,6 +222,10 @@ run = ['move-node-to-workspace 2']
 
 [[on-window-detected]]
 if.app-id = 'dev.warp.Warp-Stable'
+run = ['move-node-to-workspace 1']
+
+[[on-window-detected]]
+if.app-id = 'com.ghostty.ghostty'
 run = ['move-node-to-workspace 1']
 
 [[on-window-detected]]
