@@ -14,8 +14,8 @@ local currentWorkspaceWatcher = sbar.add("item", {
 })
 
 local spaceConfigs <const> = {
-  ["1"] = { icon = "", name = "Dev" },
-  ["2"] = { icon = "󰖟", name = "Browser" },
+  ["1"] = { icon = "", name = "Dev" },
+  ["2"] = { icon = "", name = "Browser" },
   ["3"] = { icon = "", name = "Video" },
   ["4"] = { icon = "󱞁", name = "Notes" },
   -- ["4"] = { icon = "", name = "AltBrowser" },
@@ -25,7 +25,7 @@ local spaceConfigs <const> = {
   ["6"] = { icon = "", name = "Mail" },
   ["7"] = { icon = "", name = "Music" },
   ["8"] = { icon = "", name = "Remote" },
-  ["9"] = { icon = "󰌾", name = "Secrets" },
+  ["9"] = { icon = "", name = "Secrets" },
   ["10"] = { icon = "󰌾", name = "Secrets" },
   -- ["t"] = { icon = "", name = "Meeting" },
 }

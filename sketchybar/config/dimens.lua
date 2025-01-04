@@ -25,11 +25,11 @@ local graphics <const> = {
     width = 200,
     large_width = 300,
   },
-  blur_radius = 55,
+  blur_radius = 20,
 }
 
 local text <const> = {
-  icon = 16.0,
+  icon = 18.0,
   label = 14.0,
 }
 
