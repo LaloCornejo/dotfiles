@@ -1,12 +1,12 @@
 theme = Snazzy
-background = #0b000b
 background-blur-radius = 20
-background-opacity = .45
+background-opacity = .30
 font-family = JetBrains Nerdfot Mono
-font-size = 20
+font-size = 18
 font-thicken = true
 cursor-style-blink = false
 shell-integration-features = no-cursor
+unfocused-split-opacity = 0.5
 
 macos-titlebar-style = hidden
 macos-option-as-alt = true

@@ -14,7 +14,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # Aliases for convenience
 alias reload-zsh="source ~/.zshrc"
 alias edit-zsh="nvim ~/.dotfiles/zshrc/.zshrc"
-alias lg="lazygti"
+alias lg="lazygit"
 alias nxdw="z /Users/lalocornejo/.dotfiles/nix-darwin/"
 alias ls="eza --color=always --long --git --icons=always --sort=size --group-directories-first --time-style=long-iso"
 alias cd="z"

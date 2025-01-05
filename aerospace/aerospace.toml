@@ -12,7 +12,7 @@ on-focus-changed = [
   'move-mouse window-lazy-center',
 ]
 
-start-at-login = true
+start-at-login = false
 
 enable-normalization-flatten-containers = false
 enable-normalization-opposite-orientation-for-nested-containers = false
