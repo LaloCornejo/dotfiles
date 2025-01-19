@@ -6,11 +6,28 @@
 # https://www.nushell.sh/book/coloring_and_theming.html
 # And here is the theme collection
 # https://github.com/nushell/nu_scripts/tree/main/themes
+
+# Set the PATH variable permanently
+$env.PATH = [
+    '/Users/lalocornejo/go/bin',
+    '/usr/local/go/bin',
+    '/Users/lalocornejo/.local/bin',
+    '/Users/lalocornejo/.cargo/bin',
+    '/Users/lalocornejo/.nix-profile/bin',
+    '/run/current-system/sw/bin',
+    '/nix/var/nix/profiles/default/bin',
+    '/usr/local/bin',
+    '/usr/bin',
+    '/usr/sbin',
+    '/bin',
+    '/sbin'
+]
+
 let dark_theme = {
     # color for nushell primitives
     separator: white
     leading_trailing_space_bg: { attr: n } # no fg, no bg, attr none effectively turns this off
-    header: green_bold
+    header: cyan_bold
     empty: blue
     # Closures can be used to choose colors for specific values.
     # The value (in this case, a bool) is piped into the closure.
@@ -140,7 +157,7 @@ let light_theme = {
 }
 
 $env.config = {
-    show_banner: true
+    show_banner: false
 
     ls: {
         use_ls_colors: true # use the LS_COLORS environment variable to colorize output
@@ -222,7 +239,7 @@ $env.config = {
     use_grid_icons: true
     footer_mode: "25" # always, never, number_of_rows, auto
     float_precision: 2 # the precision for displaying floats in tables
-    buffer_editor: "" # command that will be used to edit the current line buffer with ctrl+o, if unset fallback to $env.EDITOR and $env.VISUAL
+    buffer_editor: "nvim" # command that will be used to edit the current line buffer with ctrl+o, if unset fallback to $env.EDITOR and $env.VISUAL
     use_ansi_coloring: true
     bracketed_paste: true # enable bracketed paste, currently useless on windows
     edit_mode: vi # emacs, vi
@@ -901,12 +918,6 @@ alias c = clear
 alias ll = ls -l
 alias lt = eza --tree --level=2 --long --icons --git
 alias v = nvim
-alias hms = /nix/store/6kc5srg83nkyg21am089xx7pvq44kn2c-home-manager/bin/home-manager switch
-alias as = aerospace
-
-def ff [] {
-    aerospace list-windows --all | fzf --bind 'enter:execute(bash -c "aerospace focus --window-id {1}")+abort'
-}
 
 
 # Git
@@ -942,6 +953,70 @@ alias ke = kubectl exec -it
 
 source ~/.config/nushell/env.nu
 source ~/.zoxide.nu
-source ~/.cache/carapace/init.nu
-source ~/.local/share/atuin/init.nu
-use ~/.cache/starship/init.nu
+
+# Set up aliases
+alias z = "cd"
+alias ls = eza --icons --git --long --tree --level=2 --all --color=auto --group-directories-first --time-style=long-iso --human-readable --sort=extension --ignore-glob='*.DS_Store' --ignore-glob='*.git' --ignore-glob='*.gitignore' --ignore-glob='*.gitmodules' --ignore-glob='*.gitattributes' --ignore-glob='*.gitkeep' --ignore-glob='*.gitconfig' --ignore-glob='*.gitignore' --ignore-glob='*.gitmessage
+alias reload-nu = 'source ~/.config/nushell/config.nu'
+alias edit-nu = 'nvim ~/.config/nushell/config.nu'
+alias lg = 'lazygit'
+
+# History configuration (Nushell handles history automatically)
+
+# Set up the editor based on SSH connection
+if $env.SSH_CONNECTION {
+    let $editor = 'vim'
+} else {
+    let $editor = 'nvim'
+}
+
+# FZF setup (requires installation of fzf)
+let $fzf_default_command = 'fd --type f --hidden --follow'
+let $fzf_ctrl_t_command = $fzf_default_command
+let $fzf_alt_c_command = 'fd --type d --hidden --strip-cwd-prefix --exclude .git'
+
+# Lazy loading for The Fuck (not directly supported in Nu Shell)
+# Custom functions can be created for similar functionality
+
+def fcd [] {
+    let $dir = (find . -type d -not -path '*/.*' | fzf)
+    cd $dir
+    ls
+}
+
+def f [] {
+    let $file = (find . -type f -not -path '*/.*' | fzf)
+    echo $file | pbcopy
+}
+
+def fv [] {
+    let $file = (find . -type f -not -path '*/.*' | fzf)
+    nvim $file
+}
+
+# Stow alias for dotfiles management
+alias stow = 'stow --dir=$HOME/.dotfiles --target=$HOME/.config'
+
+# Taskwarrior sync check (requires custom implementation)
+# You can create a function to handle this
+
+# Homebrew update check (requires custom implementation)
+# You can create a function to handle this
+
+# Key bindings (Nushell does not support key bindings like Zsh)
+
+# Add Cargo bin directory to PATH for Rust tools
+$env.PATH = '/Users/lalocornejo/.cargo/bin:$env.PATH'
+
+# Go environment setup
+$env.GOROOT = '/usr/local/go'
+$env.GOPATH = '/Users/lalocornejo/go'
+$env.PATH = '$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$env.PATH'
+
+# Twitch streaming function using Streamlink with ad disable option 
+def twitch [channel] {
+    streamlink --twitch-disable-ads twitch.tv/$channel best &
+}
+
+# Obsidian path setup 
+let $obsidian_base = "/Users/lalocornejo/Library/Mobile Documents/iCloud~md~obsidian/Documents/OwO"

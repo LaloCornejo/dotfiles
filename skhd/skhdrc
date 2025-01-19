@@ -15,11 +15,16 @@ alt + shift - k : yabai -m window --warp nort
 alt + shift - l : yabai -m window --warp east
 
 # resize window
-alt + shift - 0x1B : yabai -m window --resize left:-50:0 || yabai -m window --resize right:-50:0
-alt + shift - 0x18 : yabai -m window --resize left:50:0 || yabai -m window --resize right:50:0
+# alt + shift - 0x1B : yabai -m window --resize left:-50:0 || yabai -m window --resize right:-50:0
+# alt + shift - 0x18 : yabai -m window --resize left:50:0 || yabai -m window --resize right:50:0
+
+# execute reziseWindow.sh
+alt + shift - 0x1B : ~/.config/skhd/scripts/resizeWindow.sh -h
+alt + shift - 0x18 : ~/.config/skhd/scripts/resizeWindow.sh -l
+
 
 # toggle window fullscreen zoom
-alt + shift - 0x3B : yabai -m window --toggle zoom-fullscreen
+alt + shift - z : yabai -m window --toggle zoom-fullscreen
 
 # float / unfloat window and center on screen
 alt - f : yabai -m window --toggle float;\

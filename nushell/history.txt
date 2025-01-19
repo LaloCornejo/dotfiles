@@ -1,0 +1,23 @@
+eza
+nvim .config/nushell
+exit
+edit-nu
+exit
+edit-nu
+nvim .config/nushell/env.nu
+config-nu
+config nu
+$env.config.buffer_editor=nvim
+$env.config.buffer_editor= "nvim"
+clear
+config nu
+$env.EDITOR
+$env.config.buffer_editor nvim
+nvim .config/nushell/env.nu
+config nu
+clear
+tmux
+/bin/zsh
+exit
+clear
+exit

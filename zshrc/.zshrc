@@ -1,9 +1,11 @@
 # Enable Powerlevel10k instant prompt
-
 # Load instant prompt if available
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+
+# Set Powerlevel10k instant prompt to quiet to suppress warnings
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 # Path to your Oh My Zsh installation
 export ZSH="$HOME/.oh-my-zsh"
@@ -12,12 +14,17 @@ export ZSH="$HOME/.oh-my-zsh"
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh 
 
 # Aliases for convenience
+alias ls="eza --color=always --long --git --icons=always --sort=size --group-directories-first --time-style=long-iso"
 alias reload-zsh="source ~/.zshrc"
 alias edit-zsh="nvim ~/.dotfiles/zshrc/.zshrc"
 alias lg="lazygit"
-alias nxdw="z /Users/lalocornejo/.dotfiles/nix-darwin/"
-alias ls="eza --color=always --long --git --icons=always --sort=size --group-directories-first --time-style=long-iso"
 alias cd="z"
+alias yy="yazi"
+alias st="speedtest"
+alias c="clear"
+alias l="ls"
+alias v="nvim"
+alias q="exit"
 
 # History setup
 HISTFILE=~/.zsh_history
@@ -44,14 +51,14 @@ export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always --line-range :500 {}'"
 export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
 
 # Lazy load for The Fuck and Zoxide
-fuck() {
+function fuck {
   unfunction "$0"
   eval $(thefuck --alias)
   eval $(thefuck --alias fk)
   $0 "$@"
 }
 
-z() {
+function z {
   unfunction "$0"
   eval "$(zoxide init zsh)"
   $0 "$@"
@@ -61,18 +68,18 @@ z() {
 function ranger {
   local tempfile="$(mktemp -t tmp.XXXXXX)"
   command ranger --cmd="map Q chain shell echo %d > \"$tempfile\"; quitall" "$@"
-  
+
   if [[ -f "$tempfile" && "$(cat "$tempfile")" != "$(pwd)" ]]; then
     cd "$(cat "$tempfile")" || return
   fi
-  
+
   command rm -f "$tempfile" 2>/dev/null
 }
 alias rr='ranger'
 
 # Navigation shortcuts
-cx() { cd "$@" && l; }
-fcd() { cd "$(find . -type d -not -path '*/.*' | fzf)" && ls; }
+cx() { z "$@" && l; }
+fcd() { z "$(find . -type d -not -path '*/.*' | fzf)" && ls; }
 f() { echo "$(find . -type f -not -path '*/.*' | fzf)" | pbcopy; }
 fv() { nvim "$(find . -type f -not -path '*/.*' | fzf)"; }
 
@@ -81,34 +88,57 @@ alias stow="stow --dir=$HOME/.dotfiles --target=$HOME/.config"
 
 # Taskwarrior sync check to avoid unnecessary syncs
 if [[ ! -f ~/tmp/.task_last_run || "$(date -r ~/tmp/.task_last_run +%Y%m%d)" != "$(date +%Y%m%d)" ]]; then
-  task sync > /dev/null &
-  task list
+  task sync > /dev/null 2>&1 &
+  task list > /dev/null 2>&1 # Suppress output here as well.
   touch ~/tmp/.task_last_run
 fi
 
 # Homebrew update check to avoid unnecessary updates
 if [[ ! -f ~/.dotfiles/brew-list.txt || "$(date -r ~/.dotfiles/brew-list.txt +%Y%m%d)" != "$(date +%Y%m%d)" ]]; then
-  (brew update > /dev/null && brew upgrade > /dev/null && brew cleanup > /dev/null) &
-  brew list > ~/.dotfiles/brew-list.txt
+  (brew update > /dev/null 2>&1 && brew upgrade > /dev/null 2>&1 && brew cleanup > /dev/null 2>&1 &
+   brew list > ~/.dotfiles/brew-list.txt)
 fi
 
 # Source Zsh autosuggestions and syntax highlighting if available
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh &>/dev/null &
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh &>/dev/null &
+if [[ -f /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]]; then
+  source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
+
+if [[ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]]; then
+  source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
 
 # Key bindings for autosuggestions and navigation enhancements
+bindkey '^l' autosuggest-accept
 bindkey '^w' autosuggest-execute
-bindkey '^e' autosuggest-accept
 bindkey '^u' autosuggest-toggle
 bindkey '^L' vi-forward-word
 bindkey '^k' up-line-or-search
 bindkey '^j' down-line-or-search
 
-# Add Cargo bin directory to PATH for Rust tools
+# Add Cargo bin directory to PATH for Rust tools 
 export PATH="$HOME/.cargo/bin:$PATH"
+
+# --- GO ---
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+
+# Update PATH to include GOPATH and GOROOT binaries 
+export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
 
 # Twitch streaming function using Streamlink with ad disable option 
 twitch() {
-  streamlink --twitch-disable-ads twitch.tv/$1 best &
+  if [[ -z "$1" ]]; then
+    echo "Usage: twitch <channel>"
+    return 1
+  fi
+
+  local quality="${2:-best}"
+  
+  streamlink --twitch-disable-ads --twitch-low-latency twitch.tv/$1 $quality > /dev/null 2>&1 &
 }
+
+# --- Obsidian ---
+obsidian_base="'/Users/lalocornejo/Library/Mobile Documents/iCloud~md~obsidian/Documents/OwO '"
+
 
