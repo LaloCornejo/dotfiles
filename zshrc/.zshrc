@@ -15,8 +15,8 @@ export ZSH="$HOME/.oh-my-zsh"
 
 # Aliases for convenience
 alias ls="eza --color=always --long --git --icons=always --sort=size --group-directories-first --time-style=long-iso"
-alias reload-zsh="source ~/.zshrc"
-alias edit-zsh="nvim ~/.dotfiles/zshrc/.zshrc"
+alias zsh="source ~/.zshrc"
+alias ezsh="nvim ~/.dotfiles/zshrc/.zshrc"
 alias lg="lazygit"
 alias cd="z"
 alias yy="yazi"
@@ -25,6 +25,9 @@ alias c="clear"
 alias l="ls"
 alias v="nvim"
 alias q="exit"
+alias t="twitch"
+alias mysql="/usr/local/mysql/bin/mysql -u root -p"
+alias mampsql="/Applications/MAMP/Library/bin/mysql80/bin/mysql -u root -p"
 
 # History setup
 HISTFILE=~/.zsh_history
@@ -88,7 +91,7 @@ alias stow="stow --dir=$HOME/.dotfiles --target=$HOME/.config"
 
 # Taskwarrior sync check to avoid unnecessary syncs
 if [[ ! -f ~/tmp/.task_last_run || "$(date -r ~/tmp/.task_last_run +%Y%m%d)" != "$(date +%Y%m%d)" ]]; then
-  task sync > /dev/null 2>&1 &
+  # task sync > /dev/null 2>&1 &
   task list > /dev/null 2>&1 # Suppress output here as well.
   touch ~/tmp/.task_last_run
 fi
@@ -133,7 +136,7 @@ twitch() {
     return 1
   fi
 
-  local quality="${2:-best}"
+  local quality="${2:-720p60}"
   
   streamlink --twitch-disable-ads --twitch-low-latency twitch.tv/$1 $quality > /dev/null 2>&1 &
 }
@@ -141,4 +144,11 @@ twitch() {
 # --- Obsidian ---
 obsidian_base="'/Users/lalocornejo/Library/Mobile Documents/iCloud~md~obsidian/Documents/OwO '"
 
+# bun completions
+[ -s "/Users/lalocornejo/.bun/_bun" ] && source "/Users/lalocornejo/.bun/_bun"
 
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+export PATH="$PATH:/Applications/microchip/xc8/v3.00/bin"

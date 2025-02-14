@@ -43,5 +43,21 @@ highlight NonText guibg=none
 highlight Normal ctermbg=none
 highlight NonText ctermbg=none
 highlight EndOfBuffer guibg=NONE ctermbg=NONE
+highlight EndOfBuffer guifg=NONE ctermfg=NONE
 set pumblend=10  " Adjust as needed for popup transparency
+highlight VertSplit guibg=NONE
+highlight SignColumn guibg=NONE
+highlight NormalNC guibg=NONE
+highlight MsgArea guibg=NONE
+highlight TelescopeBorder guibg=NONE
+highlight TelescopePromptBorder guibg=NONE
+highlight TelescopeResultsBorder guibg=NONE
+highlight TelescopePreviewBorder guibg=NONE
+highlight TelescopeSelectionCaret guibg=NONE
+highlight TelescopeMatching guibg=NONE
+highlight TelescopeNormal guibg=NONE
+highlight TelescopePromptPrefix guibg=NONE
+highlight TelescopePromptBorder guibg=NONE
+highlight TelescopePromptPrefix guibg=NONE
+highlight TelescopePrompt guibg=NONE
 ]]

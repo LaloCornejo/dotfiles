@@ -34,7 +34,7 @@ alt - f : yabai -m window --toggle float;\
 alt - b : yabai -m space --balance
 
 # rotate windows
-alt + shift - a : yabai -m space --rotate 90
+# alt + shift - a : yabai -m space --rotate 90
 alt + shift - c : yabai -m space --rotate 270
 
 # restart yabai

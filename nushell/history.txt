@@ -21,3 +21,199 @@ tmux
 exit
 clear
 exit
+ls
+nushell/
+la
+ls
+config env 
+$nu.config-path
+nvim config.nu
+exit
+config
+config nu
+$nu.config-path
+nvim .dotfiles/nushell/config.nu
+exit
+clear
+tmux new-pane
+clear
+bat .dotfiles/tmux/tmux.reset.conf
+bat .dotfiles/tmux/tmux.conf
+bat .dotfiles/tmux/tmux.reset.conf
+cmatrix
+btop
+clear
+nvim .dotfiles/tmux/tmux.conf
+stow .
+z 
+cd .dotfiles/
+ls
+stow .
+stow . --adopt
+clear
+ls
+cd
+.config/
+ls
+exit
+cmatrix
+clear
+arttime -a unix
+clear
+tmux rezise-pane -R 10
+tmux resize-pane -R 10
+clear
+cmatrix 
+arttime -a unix
+ls
+clear
+Downloads/
+ls
+ls | sort --name
+ls | sort -n
+ls | sort -name
+ls | sort -a
+clear
+ls
+clear
+z
+cd
+clear
+dust
+mailsy
+cmatrix 
+clear
+btop
+clear
+exit
+/usr/local/mysql/bin/mysql -u root -p
+clear
+mysql
+clear
+/usr/local/mysql/bin/mysql -u root -p
+.dotfiles/ghostty/
+ls
+nvim config
+clear
+cd
+clear
+clear
+ollama 
+ollama list model
+ollama list
+ollama run llama3.2:latest
+axel https://objects.githubusercontent.com/github-production-release-asset-2e65be/410749029/7c91e28c-26bb-4009-84f8-24241da1285d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250213%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250213T192502Z&X-Amz-Expires=300&X-Amz-Signature=5cefa67b8a0380ee4fa095ac6eccc15cf165dbb7325dd7cf4f98e60506c97fce&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DSpacedrive-darwin-x86_64.dmg&response-content-type=application%2Foctet-stream
+cd Downloads/
+sudo axel https://objects.githubusercontent.com/github-production-release-asset-2e65be/410749029/7c91e28c-26bb-4009-84f8-24241da1285d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250213%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250213T192502Z&X-Amz-Expires=300&X-Amz-Signature=5cefa67b8a0380ee4fa095ac6eccc15cf165dbb7325dd7cf4f98e60506c97fce&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DSpacedrive-darwin-x86_64.dmg&response-content-type=application%2Foctet-stream
+clear
+ls
+clear
+ls | find *.pdf
+ls | grep *.pdf
+ls | find pdf
+rm `UAEH Services Escolares.pdf` `UNIPI Certificate List (1).pdf` `UNIPI Certificate List.pdf`
+ls | find pdf
+rm Ryanair.pdf `SPEI Payment Data.pdf` `Receipt (1).pdf` Receipt.pdf
+yy
+yazi
+ls
+ls | find mp4
+cd
+ls --tree | find mp4
+ls -alle | find mp4
+ls --threads --du --short-names  | find mp4
+ls --threads
+ls --threads --short-names 
+ls --threads --short-names --du
+ls --threads --short-names --tree
+ls
+mysql
+clear
+exit
+tmux new-window
+e
+exit
+ear
+clear
+exit
+e
+exit
+clear
+c
+e
+exit
+c
+t tarik
+c
+t tarik
+c
+e
+exit
+c
+t tarik
+t tarik 720p60
+c
+t tarik
+t tarik 360p
+c
+t tarik 
+t tarik null
+t tarik 360p
+c
+clear
+exit
+t tarik
+exit
+t tarik
+clear
+exit
+c
+ls
+c
+ls
+z Downloads/
+ls
+l
+ls
+z
+c
+ls
+l
+fv
+clear
+c
+tmux new-window
+c
+mysql
+nvim
+c
+croc 0530-cobra-drink-buenos
+Downloads/
+croc 5010-control-ricardo-llama
+yy
+nu config
+config nu
+c
+yy
+z Downloads/
+croc 7633-crack-caravan-tennis
+c
+z
+mampsql
+mysql
+c
+cmatrix 
+c
+nvim .dotfiles/karabiner/karabiner.json
+c
+nvim .dotfiles/karabiner/karabiner.json
+c
+reload nu
+c
+btop
+c
+nvim .dotfiles/ghostty/config
+c
+arttime -a unix
+c
+.dotfiles/

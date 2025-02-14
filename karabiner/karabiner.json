@@ -57,23 +57,18 @@
             ]
           },
           {
-            "description": "Map Left Shift + Right command to Left Control + Right Option",
+            "description": "Map Left Shift + Right Shift to CAPS",
             "manipulators": [
               {
                 "from": {
-                  "key_code": "right_command",
+                  "key_code": "left_shift",
                   "modifiers": {
-                    "mandatory": ["left_shift"],
+                    "mandatory": ["right_shift"],
                     "optional": ["any"]
                   }
                 },
-                "to": [
-                  {
-                    "key_code": "left_control",
-                    "modifiers": ["right_option"]
-                  }
-                ],
-                "type": "basic"
+                "to": [{ "key_code": "caps_lock" }],
+                "type": "basic"                            
               }
             ]
           }

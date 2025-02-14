@@ -1,1 +1,1 @@
-source /Users/lalocornejo/.config/nushell/env.nu
+$env.XDG_CONFIG_HOME = $"($env.HOME)/.config"

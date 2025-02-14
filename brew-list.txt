@@ -5,6 +5,7 @@ brotli
 c-ares
 ca-certificates
 cairo
+carapace
 certifi
 cffi
 cloc
@@ -71,6 +72,7 @@ lzo
 m4
 mpdecimal
 mpfr
+nextdns
 node
 nushell
 openexr
@@ -110,6 +112,7 @@ aerospace
 alt-tab
 bettertouchtool
 blurred
+deskflow
 font-hack-nerd-font
 font-space-mono-nerd-font
 ghostty
@@ -117,6 +120,7 @@ homerow
 iglance
 iina
 karabiner-elements
+leader-key
 orion
 qutebrowser
 rectangle
