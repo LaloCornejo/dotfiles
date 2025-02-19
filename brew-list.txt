@@ -28,7 +28,7 @@ graphite2
 harfbuzz
 highway
 howdoi
-icu4c@76
+icu4c
 imagemagick
 imath
 isl
@@ -77,14 +77,14 @@ node
 nushell
 openexr
 openjpeg
-openssl@3
+openssl
 pango
 pcre2
 pixman
 pycparser
 python-packaging
-python@3.12
-python@3.13
+python
+python
 ranger
 readline
 shared-mime-info

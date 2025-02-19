@@ -217,3 +217,51 @@ c
 arttime -a unix
 c
 .dotfiles/
+c
+nvim .config/tmux/tmux.conf
+exit
+tmux source-file ~/.config/tmux/tmux.conf
+brew uninstall tmux
+brew install tmux
+clear
+cd
+tmux --reload-server
+tmux -f .dotfiles/tmux/tmux.conf
+tmux -f .dotfiles/tmux/tmux.reset.conf
+exit
+x
+c
+which tmux
+/Users/lalocornejo/.config/tmux/tmux.conf
+exit
+z
+c
+exit
+c
+z
+c
+exit
+c
+nvim tmux/tmux.conf
+run '~/.tmux/plugins/tpm/tpm'
+start '~/.tmux/plugins/tpm/tpm'
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+chmod +X '~/.tmux/plugins/tpm/tpm'
+z
+.tmux
+yy
+chmod +X ~/.tmux/plugins/tpm/tpm
+runX ~/.tmux/plugins/tpm/tpm
+run ~/.tmux/plugins/tpm/tpm
+start ~/.tmux/plugins/tpm/tpm
+nvim tmux/tmux.conf
+z
+c
+t xqc
+t celebi_cos
+t neet
+c
+c
+gradle bootRun
+exit
+exit
