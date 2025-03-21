@@ -9,7 +9,7 @@
 
 let dark_theme = {
 # color for nushell primitives
-separator: white
+separator: purple
              leading_trailing_space_bg: { attr: none } # no fg, no bg, attr none effectively turns this off
              header: cyan_bold
              empty: blue
@@ -27,7 +27,7 @@ separator: white
              nothing: white
              binary: white
              cell-path: white
-             row_index: green_bold
+             row_index: purple_bold
              record: white
              list: white
              block: white
@@ -37,12 +37,12 @@ shape_and: purple_bold
              shape_binary: purple_bold
              shape_block: blue_bold
              shape_bool: light_cyan
-             shape_closure: green_bold
-             shape_custom: green
+             shape_closure: purple_bold
+             shape_custom: purple
              shape_datetime: cyan_bold
              shape_directory: cyan
              shape_external: cyan
-             shape_externalarg: green_bold
+             shape_externalarg: purple_bold
              shape_external_resolved: light_yellow_bold
              shape_filepath: cyan
              shape_flag: blue_bold
@@ -56,7 +56,7 @@ shape_glob_interpolation: cyan_bold
                             shape_keyword: cyan_bold
                             shape_list: cyan_bold
                             shape_literal: blue
-                            shape_match_pattern: green
+                            shape_match_pattern: purple
                             shape_matching_brackets: { attr: u }
 shape_nothing: light_cyan
                  shape_operator: yellow
@@ -65,8 +65,8 @@ shape_nothing: light_cyan
                  shape_range: yellow_bold
                  shape_record: cyan_bold
                  shape_redirection: purple_bold
-                 shape_signature: green_bold
-                 shape_string: green
+                 shape_signature: purple_bold
+                 shape_string: purple
                  shape_string_interpolation: cyan_bold
                  shape_table: blue_bold
                  shape_variable: purple
@@ -78,7 +78,7 @@ let light_theme = {
 # color for nushell primitives
 separator: dark_gray
              leading_trailing_space_bg: { attr: n } # no fg, no bg, attr none effectively turns this off
-             header: green_bold
+             header: purple_bold
              empty: blue
 # Closures can be used to choose colors for specific values.
 # The value (in this case, a bool) is piped into the closure.
@@ -94,7 +94,7 @@ separator: dark_gray
              nothing: dark_gray
              binary: dark_gray
              cell-path: dark_gray
-             row_index: green_bold
+             row_index: purple_bold
              record: dark_gray
              list: dark_gray
              block: dark_gray
@@ -104,12 +104,12 @@ shape_and: purple_bold
              shape_binary: purple_bold
              shape_block: blue_bold
              shape_bool: light_cyan
-             shape_closure: green_bold
-             shape_custom: green
+             shape_closure: purple_bold
+             shape_custom: purple
              shape_datetime: cyan_bold
              shape_directory: cyan
              shape_external: cyan
-             shape_externalarg: green_bold
+             shape_externalarg: purple_bold
              shape_external_resolved: light_purple_bold
              shape_filepath: cyan
              shape_flag: blue_bold
@@ -122,7 +122,7 @@ shape_globpattern: cyan_bold
                      shape_keyword: cyan_bold
                      shape_list: cyan_bold
                      shape_literal: blue
-                     shape_match_pattern: green
+                     shape_match_pattern: purple
                      shape_matching_brackets: { attr: u }
 shape_nothing: light_cyan
                  shape_operator: yellow
@@ -131,8 +131,8 @@ shape_nothing: light_cyan
                  shape_range: yellow_bold
                  shape_record: cyan_bold
                  shape_redirection: purple_bold
-                 shape_signature: green_bold
-                 shape_string: green
+                 shape_signature: purple_bold
+                 shape_string: purple
                  shape_string_interpolation: cyan_bold
                  shape_table: blue_bold
                  shape_variable: purple
@@ -299,7 +299,7 @@ layout: columnar
           col_padding: 2
         }
 style: {
-text: green
+text: purple
         selected_text: { attr: r }
 description_text: yellow
                     match_text: { attr: u }
@@ -332,7 +332,7 @@ layout: ide
             correct_cursor_pos: false
         }
 style: {
-text: green
+text: purple
         selected_text: { attr: r }
 description_text: yellow
                     match_text: { attr: u }
@@ -348,8 +348,8 @@ layout: list
           page_size: 10
         }
 style: {
-text: green
-        selected_text: green_reverse
+text: purple
+        selected_text: purple_reverse
         description_text: yellow
        }
        }
@@ -366,8 +366,8 @@ layout: description
           description_rows: 10
         }
 style: {
-text: green
-        selected_text: green_reverse
+text: purple
+        selected_text: purple_reverse
         description_text: yellow
        }
        }
@@ -907,6 +907,8 @@ alias v = nvim
 alias yy = yazi
 alias mysql = /usr/local/mysql/bin/mysql -u root -p
 alias mampsql = /Applications/MAMP/Library/bin/mysql80/bin/mysql -u root -p
+alias ghostty = nvim /Users/lalocornejo/.dotfiles/ghostty/config
+alias pm = podman
 def edit-nu [] { 
   nvim $nu.config-path 
 }
@@ -917,7 +919,7 @@ alias gca = git commit -a -m
 alias gp = git push origin HEAD
 alias gpu = git pull origin
 alias gst = git status
-alias glog = git log --graph --topo-order --pretty='%w(100,0,6)%C(yellow)%h%C(bold)%C(black)%d %C(cyan)%ar %C(green)%an%n%C(bold)%C(white)%s %N' --abbrev-commit
+alias glog = git log --graph --topo-order --pretty='%w(100,0,6)%C(yellow)%h%C(bold)%C(black)%d %C(cyan)%ar %C(purple)%an%n%C(bold)%C(white)%s %N' --abbrev-commit
 alias gdiff = git diff
 alias gco = git checkout
 alias gb = git branch
@@ -990,23 +992,29 @@ $env.PATH = ($env.PATH | append [
     '~/go/bin'
     '/usr/local/go/bin'
     '~/.local/bin'
-])
+    '/usr/local/mysql/bin'
+    '/Applications/MAMP/Library/bin/mysql80/bin'
+    '/usr/local/opt/*'
+                     '/usr/local/opt/ripgrep/bin'
+                     ])
 
 # Go environment setup
 $env.GOROOT = '/usr/local/go'
 $env.GOPATH = '~/go'
 
+$env.DOCKER_HOST=unix:///run/user/$UID/podman/podman.sock
+
 # Twitch streaming command
 def twitch [
-  channel: string       
-  quality?: string       
+channel: string       
+quality?: string       
 ] {
-  let selected_quality = if ($quality | is-empty) {
-    ["360p" "480p" "720p60" "best"] | input list "Quality?: "
-  } else {
-    $quality
-  }
-  streamlink --twitch-disable-ads $"twitch.tv/($channel)" $selected_quality
+let selected_quality = if ($quality | is-empty) {
+["audio_only" "360p" "480p" "720p60" "best"] | input list "Quality?: "
+} else {
+$quality
+}
+streamlink --twitch-disable-ads $"twitch.tv/($channel)" $selected_quality
 }
 
 
@@ -1014,3 +1022,4 @@ def twitch [
 $env.LANG = 'en_US.UTF-8'
 $env.LC_ALL = 'en_US.UTF-8'
 alias t = twitch
+$env.PATH = "/Users/lalocornejo/.bun/bin:/Users/lalocornejo/go/bin:/usr/local/go/bin:/Users/lalocornejo/.local/bin:/Users/lalocornejo/.cargo/bin:/usr/local/bin:/usr/local/sbin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/X11/bin:/Users/lalocornejo/.cargo/bin:/Applications/microchip/xc8/v3.00/bin"

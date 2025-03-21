@@ -115,7 +115,7 @@ return {
 
   {
     "github/copilot.vim",
-    lazy = false,
+    lazy = true,
     keys = { "<leader>ce" },
     config = function()
       vim.cmd("Copilot setup")  -- Initialize Copilot
@@ -137,4 +137,21 @@ return {
   {
     'echasnovski/mini.nvim', version = false, lazy = false
   },
+  {
+    'CRAG666/code_runner.nvim', lazy = false,
+    config = function()
+      require('code_runner').setup({
+        filetypes = {
+          cpp = {
+            executor = 'g++',
+            args = {'-o', 'a.out', '-std=c++17', '-Wall', '-Wextra', '-Wshadow', '-Wnon-virtual-dtor', '-pedantic', '-Werror', '-g', '-O2'},
+            suffix = 'cpp',
+            compile = './a.out',
+            run = './a.out',
+            check = 'echo "No check available"',
+          },
+        },
+      })
+    end
+  }
 }
