@@ -1023,3 +1023,4 @@ $env.LANG = 'en_US.UTF-8'
 $env.LC_ALL = 'en_US.UTF-8'
 alias t = twitch
 $env.PATH = "/Users/lalocornejo/.bun/bin:/Users/lalocornejo/go/bin:/usr/local/go/bin:/Users/lalocornejo/.local/bin:/Users/lalocornejo/.cargo/bin:/usr/local/bin:/usr/local/sbin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/X11/bin:/Users/lalocornejo/.cargo/bin:/Applications/microchip/xc8/v3.00/bin"
+source "$HOME/.cargo/env.nu"

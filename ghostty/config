@@ -1,8 +1,8 @@
 theme = Snazzy
-background-blur-radius = 65
-background-opacity = .35
+background-blur-radius = 85
+background-opacity = .25
 font-family = JetBrains Nerdfot Mono
-font-size = 20
+font-size = 22
 font-thicken = true
 cursor-style-blink = true
 cursor-invert-fg-bg = true
@@ -25,5 +25,5 @@ keybind = global:cmd+/=toggle_quick_terminal
 keybind = super+r=reload_config
 keybind = global:shift+option+g=toggle_quick_terminal
 
-initial-command = clear | tmux
+initial-command = clear && tmux && nu
 copy-on-select = true

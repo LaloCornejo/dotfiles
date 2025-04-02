@@ -265,3 +265,157 @@ c
 gradle bootRun
 exit
 exit
+lg
+c
+l
+bat README.md
+c
+z |c
+ssh laelo@192.168.8.150
+shh laelo@LÆLÖPi.local
+ssh laelo@LÆLÖPi.local
+ssh laelo@laeloPi.local
+c
+brew install borders
+brew tap FelixKratz/formulae<\n>brew install borders
+nvim .dotfiles/yabai/
+c
+pm ps
+podman ps
+tailscale ip
+brew install kew
+brew install magic-jd/tap/is-fast
+is-fast how to do for loop on rust
+is-fast tenz age
+is-fast vlr.gg
+c
+kew
+.dotfiles/
+yy
+^open .
+yy
+^open .
+lg
+zc
+z c
+z |c
+nvim .dotfiles/nvim/
+c
+nvim
+c
+sge 
+sudo purge
+c
+Documents/Code/
+mkdir glance && cd glance && curl -sL https://github.com/glanceapp/docker-compose-template/archive/refs/heads/main.tar.gz | tar -xzf - --strip-components 2
+mkdir glance ;  cd glance ; curl -sL https://github.com/glanceapp/docker-compose-template/archive/refs/heads/main.tar.gz | tar -xzf - --strip-components 2
+l
+brew search lazypodman
+lazydocker 
+is-fast use lazydocker with podman
+podman system service --time=0<\n>
+.config/lazydocker/
+nvim 
+lazydocker 
+l
+ll
+bat config.yml
+lazydocker config.yml
+lazydocker -c
+lazydocker -h
+lazydocker -f /Users/lalocornejo/.config/lazydocker/config.yml
+which lazydocker
+z
+z "~/Library/Application Support/jesseduffield/lazydocker/config.yml"
+lazydocker -c
+brew uninstall lazydocker
+brew install lazydocker
+lazydocker -c
+.config/lazydocker/
+nvim
+lazydocker -d docker_host: "unix:///run/user/$UID/podman/podman.sock"
+lazydocker -c where
+z
+z "~/Library/Application Support/jesseduffield/lazydocker/"
+lazydocker 
+c
+lazyjournal 
+c
+Documents/Code/glance/
+podman compose up -d
+pm ps
+nvim
+pm ps
+pm restart cc726031ffe8
+nvim docker-compose.yml
+bat .env
+nvim
+pm ps 
+pm rm -f cc726031ffe8
+podman compose up -d
+pm ps
+defaults write -g NSWindowShouldDragOnGesture -bool true
+z
+c
+tailscale ip
+x
+c
+Documents/Code/glance/
+l
+c
+ghostty 
+c
+nvim .dotfiles/yabai/yabairc
+c
+t sideshow 
+is-fast trying to place a banner on obsidian file but it couts as propierties how to solve?
+chatterino
+brew install chatterino
+t dreamcatcher
+sudo purge
+nvim
+c
+restartRCMD
+open /System/Volumes/Data/Applications/rcmd.app
+/System/Volumes/Data/Applications/rcmd.app
+z
+^open /System/Volumes/Data/Applications/rcmd.app
+nvim .hammerspoon/init.lua
+sudo nvim .hammerspoon/init.lua
+c
+z
+c
+c
+tesseract 
+c
+.dotfiles/tmux/
+nvim
+c
+.dotfiles/tmux/
+sudo purge
+c
+.dotfiles/
+^open .
+z|c
+c
+Documents/Code/decentralizedSocial/
+podman ps
+pm machine start
+pm ps
+./a.sh
+./b.sh
+c
+pm ps
+nvim
+./b.sh
+c
+z
+c
+ssh laelo@laeloPi.local
+c
+yy
+cp /Users/lalocornejo/MPLABXProjects/PROY_3.X/dist/default/production/PROY_3.X.production.hex /Users/lalocornejo/OneDrive/
+yy
+c
+mysql 
+c
