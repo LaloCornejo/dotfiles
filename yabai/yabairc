@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
-sudo yabai --load-sa
+lalocornejo ALL=(ALL) NOPASSWD: /usr/local/bin/yabai --load-sa
+
 
 # global settings
 yabai -m config focus_follows_mouse          autofocus
@@ -9,22 +10,19 @@ yabai -m config auto_balance                 off
 yabai -m config mouse_modifier               alt
 yabai -m config split_ratio                  0.5
 yabai -m config mouse_action1                resize
-yabai -m config inactive_opacity             0.8
-yabai -m config active_opacity               1.0
-yabai -m config normal_window_opacity        0.9
 
 # general space settings
 yabai -m config layout                       bsp
-yabai -m config top_padding                  7
-yabai -m config bottom_padding               7
-yabai -m config left_padding                 5
+yabai -m config top_padding                  5
+yabai -m config bottom_padding               5
+yabai -m config left_padding                 7
 yabai -m config right_padding                7
-yabai -m config window_gap                   12
+yabai -m config window_gap                   10
 
 # space labels
-yabai -m space 1 --label DEV
+yabai -m space 1 --label Dev
 yabai -m space 2 --label OwO
-yabai -m space 3 --label video
+yabai -m space 3 --label Video
 yabai -m space 4 --label Notes
 yabai -m space 5 --label Messages
 yabai -m space 6 --label Email
@@ -33,9 +31,10 @@ yabai -m space 8 --label Docs
 yabai -m space 9 --label VM
 yabai -m space 10 --label Trash
 
-# ignore apps
-yabai -m rule --add app="^System Settings$" manage=off
-yabai -m rule --add app="^Raycast$" manage=off
+# ignore specific apps
 yabai -m rule --add app="^Perplexity$" manage=off
+yabai -m rule --add app="^Raycast$" manage=off
+yabai -m rule --add app="^System Settings$" manage=off
 
-echo "yabai configuration loaded.."
+echo "$(date '+%Y-%m-%d %H:%M:%S') - yabai configuration loaded.."
+

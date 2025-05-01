@@ -1,0 +1,29 @@
+column_width = 120
+line_endings = "Unix"
+indent_type = "Spaces"
+indent_width = 2
+quote_style = "AutoPreferDouble"
+call_parentheses = "None"
+trailing_comma = "None"
+format_on_save = true
+license_template = "None"
+newline_style = "Unix"
+ignore = [
+  "node_modules",
+  ".git",
+  ".github",
+  ".vscode",
+  ".idea",
+  ".DS_Store",
+  ".env",
+  "dist",
+  "build",
+  "coverage",
+  "vendor",
+  "package-lock.json",
+  "yarn.lock",
+  "*.log"
+]
+--[[ stylua: ignore start ]]
+--[[ stylua: ignore end ]]
+```

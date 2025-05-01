@@ -1,63 +1,35 @@
-vim.g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
-vim.g.mapleader = " "
-
--- bootstrap lazy and all plugins
-local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
-
-if not vim.uv.fs_stat(lazypath) then
-  local repo = "https://github.com/folke/lazy.nvim.git"
-  vim.fn.system { "git", "clone", "--filter=blob:none", repo, "--branch=stable", lazypath }
+-- This file simply bootstraps the installation of Lazy.nvim and then calls other files for execution
+-- This file doesn't necessarily need to be touched, BE CAUTIOUS editing this file and proceed at your own risk.
+local lazypath = vim.env.LAZY or vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
+if not (vim.env.LAZY or (vim.uv or vim.loop).fs_stat(lazypath)) then
+  -- stylua: ignore
+  vim.fn.system({ "git", "clone", "--filter=blob:none", "https://github.com/folke/lazy.nvim.git", "--branch=stable", lazypath })
 end
-
-vim.wo.relativenumber = true
 vim.opt.rtp:prepend(lazypath)
 
-local lazy_config = require "configs.lazy"
+-- validate that lazy is available
+if not pcall(require, "lazy") then
+  -- stylua: ignore
+  vim.api.nvim_echo({ { ("Unable to load lazy from: %s\n"):format(lazypath), "ErrorMsg" }, { "Press any key to exit...", "MoreMsg" } }, true, {})
+  vim.fn.getchar()
+  vim.cmd.quit()
+end
 
--- load plugins
-require("lazy").setup({
-  {
-    "NvChad/NvChad",
-    lazy = false,
-    branch = "v2.5",
-    import = "nvchad.plugins",
-  },
+require "lazy_setup"
+require "polish"
 
-  { import = "plugins" },
-}, lazy_config)
-
--- load theme
-dofile(vim.g.base46_cache .. "defaults")
-dofile(vim.g.base46_cache .. "statusline")
-
-require "options"
-require "nvchad.autocmds"
-
-vim.schedule(function()
-  require "mappings"
-end)
+-- vim.cmd[[colorscheme tokyonight]]
+-- vim.cmd[[colorscheme gruvbox]]
 
 vim.cmd [[
+colorscheme wildcharm
 highlight Normal guibg=none
 highlight NonText guibg=none
 highlight Normal ctermbg=none
 highlight NonText ctermbg=none
 highlight EndOfBuffer guibg=NONE ctermbg=NONE
 highlight EndOfBuffer guifg=NONE ctermfg=NONE
-set pumblend=10  " Adjust as needed for popup transparency
+set pumblend=1000  " Adjust as needed for popup transparency
 highlight VertSplit guibg=NONE
 highlight SignColumn guibg=NONE
-highlight NormalNC guibg=NONE
-highlight MsgArea guibg=NONE
-highlight TelescopeBorder guibg=NONE
-highlight TelescopePromptBorder guibg=NONE
-highlight TelescopeResultsBorder guibg=NONE
-highlight TelescopePreviewBorder guibg=NONE
-highlight TelescopeSelectionCaret guibg=NONE
-highlight TelescopeMatching guibg=NONE
-highlight TelescopeNormal guibg=NONE
-highlight TelescopePromptPrefix guibg=NONE
-highlight TelescopePromptBorder guibg=NONE
-highlight TelescopePromptPrefix guibg=NONE
-highlight TelescopePrompt guibg=NONE
 ]]

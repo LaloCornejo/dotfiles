@@ -419,3 +419,11 @@ yy
 c
 mysql 
 c
+clear
+exit
+c
+config nu
+exit
+c
+clear
+exit
