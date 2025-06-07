@@ -427,3 +427,29 @@ exit
 c
 clear
 exit
+rm -rf .dotfiles
+git clone https://github.com/LaloCornejo/dotfiles.git
+mv dotfiles/ .dotfiles/
+z .dotfiles/
+nvim
+c
+nushell/
+nvim config.nu
+config nu
+c
+t shanks_ttv best
+t mizubabe best
+t lftoxy_val best
+t caedrel 480p
+t joufa best
+t jouffa best
+t celebi_cos best
+sudo purge
+t lftoxy_val best
+t erpkitten best
+t lftoxy_val best
+t sodapoppin best
+t lftoxy_val best
+c
+z .dotfiles
+git status

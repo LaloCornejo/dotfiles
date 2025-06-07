@@ -9,9 +9,7 @@ return {
       -- Disable ghost text for nvim-cmp, use copilot suggestion instead
       opts.experimental.ghost_text = false
     end,
-    keys = function()
-      return {}
-    end,
+    keys = function() return {} end,
   },
   -- Setup copilot.vim
   {
@@ -35,7 +33,7 @@ return {
       local opts = { silent = true }
 
       -- Set <C-y> to accept copilot suggestion
-      keymap("i", "<C-y>", 'copilot#Accept("\\<CR>")', { expr = true, replace_keycodes = false })
+      keymap("i", "<tab>", 'copilot#Accept("\\<CR>")', { expr = true, replace_keycodes = false })
 
       -- Set <C-i> to accept line
       keymap("i", "<C-i>", "<Plug>(copilot-accept-line)", opts)
@@ -62,9 +60,7 @@ return {
           local ok, clients = pcall(vim.lsp.get_active_clients, { name = "copilot", bufnr = 0 })
           return ok and #clients > 0
         end,
-        color = function()
-          return { fg = Snacks.util.color("Special") }
-        end,
+        color = function() return { fg = Snacks.util.color "Special" } end,
       })
     end,
   },

@@ -154,7 +154,7 @@ always_trash: false # always act as if -t was given. Can be overridden with -p
 
 table: {
 mode: rounded # basic, compact, compact_double, light, thin, with_love, rounded, reinforced, heavy, none, other
-        index_mode: always # "always" show indexes, "never" show indexes, "auto" = show indexes when a table has "index" column
+        index_mode: never # "always" show indexes, "never" show indexes, "auto" = show indexes when a table has "index" column
         show_empty: true # show 'empty list' and 'empty record' placeholders for command output
         padding: { left: 1, right: 1 } # a left right padding of each column in a table
         trim: {
@@ -199,7 +199,7 @@ completions: {
 case_sensitive: false # set to true to enable case-sensitive completions
                   quick: true    # set this to false to prevent auto-selecting completions when only one remains
                   partial: true    # set this to false to prevent partial filling of the prompt
-                  algorithm: "prefix"    # prefix or fuzzy
+                  algorithm: "fuzzy"    # prefix or fuzzy
                   external: {
 enable: true # set to false to prevent nushell looking into $env.PATH to find more suggestions, `false` recommended for WSL users as this look up may be very slow
           max_results: 100 # setting it lower can improve completion performance at the cost of omitting some options
@@ -301,7 +301,7 @@ layout: columnar
 style: {
 text: purple
         selected_text: { attr: r }
-description_text: yellow
+description_text: purple
                     match_text: { attr: u }
 selected_match_text: { attr: ur }
        }
