@@ -1,0 +1,63 @@
+AeroSpace
+AltTab
+Amphetamine Enhancer
+Amphetamine
+AppCleaner
+Apparency
+Arc
+Claude
+CleanMyMac X
+Deskflow
+DiffusionBee
+Discord
+Downie 4
+Encrypto
+Ghostty
+Hammerspoon
+IINA
+Karabiner-Elements
+Karabiner-EventViewer
+KeyCastr
+Keynote
+Klack
+Leader Key
+MarginNote 4
+MediaMate
+Modrinth App
+Noir
+NotchNook
+Numbers
+Obsidian
+OneDrive
+OnyX
+OpenCore-Patcher
+OrbStack
+PDF Squeezer
+Pages
+Parsec
+Perplexity
+Postman
+ProtonVPN
+Raycast
+RustDesk
+SF Symbols
+Safari
+Shortcat
+Spacedrive
+Spaceman
+Supercharge
+Tailscale
+Upscayl
+Warp
+WarpPreview
+Wine Stable
+Yaak
+Yam Display
+Zed
+Zen
+iGlance
+legcord
+microchip
+qBittorrent
+rcmd
+simulide

@@ -453,3 +453,10 @@ t lftoxy_val best
 c
 z .dotfiles
 git status
+lg
+git status
+ls
+bat brew-list.txt
+c
+z .dotfiles
+ls
