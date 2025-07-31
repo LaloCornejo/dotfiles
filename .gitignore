@@ -1,6 +1,5 @@
-.env
 /nushell/history.txt
-# Ignore the Nushell history file
 
 /tmux/plugins/
-# Ignore tmux plugins directory
+
+.env
