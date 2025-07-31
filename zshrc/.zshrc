@@ -152,3 +152,10 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 export PATH="$PATH:/Applications/microchip/xc8/v3.00/bin"
+
+# opencode
+export PATH=/Users/lalocornejo/.opencode/bin:$PATH
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"

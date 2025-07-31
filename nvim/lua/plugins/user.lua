@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- PLEASE REMOVE THE EXAMPLES YOU HAVE NO INTEREST IN BEFORE ENABLING THIS FILE
 -- Here are some examples:
@@ -19,6 +17,30 @@ return {
     config = function() require("lsp_signature").setup() end,
   },
 
+  -- Flash.nvim for better navigation
+  {
+    "folke/flash.nvim",
+    event = "VeryLazy",
+    opts = {
+      modes = {
+        search = {
+          enabled = true,
+        },
+        char = {
+          enabled = true,
+          jump_labels = true,
+        },
+      },
+    },
+    keys = {
+      { "s", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
+      { "S", mode = { "n", "x", "o" }, function() require("flash").treesitter() end, desc = "Flash Treesitter" },
+      { "r", mode = "o", function() require("flash").remote() end, desc = "Remote Flash" },
+      { "R", mode = { "o", "x" }, function() require("flash").treesitter_search() end, desc = "Treesitter Search" },
+      { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
+    },
+  },
+
   -- == Examples of Overriding Plugins ==
 
   -- customize dashboard options
@@ -28,17 +50,23 @@ return {
       dashboard = {
         preset = {
           header = table.concat({
-            " █████  ███████ ████████ ██████   ██████ ",
-            "██   ██ ██         ██    ██   ██ ██    ██",
-            "███████ ███████    ██    ██████  ██    ██",
-            "██   ██      ██    ██    ██   ██ ██    ██",
-            "██   ██ ███████    ██    ██   ██  ██████ ",
+            "                                   ",
+            "                                   ",
+            "                                   ",
+            "   ⣴⣶⣤⡤⠦⣤⣀⣤⠆     ⣈⣭⣿⣶⣿⣦⣼⣆          ",
+            "    ⠉⠻⢿⣿⠿⣿⣿⣶⣦⠤⠄⡠⢾⣿⣿⡿⠋⠉⠉⠻⣿⣿⡛⣦       ",
+            "          ⠈⢿⣿⣟⠦ ⣾⣿⣿⣷    ⠻⠿⢿⣿⣧⣄     ",
+            "           ⣸⣿⣿⢧ ⢻⠻⣿⣿⣷⣄⣀⠄⠢⣀⡀⠈⠙⠿⠄    ",
+            "          ⢠⣿⣿⣿⠈    ⣻⣿⣿⣿⣿⣿⣿⣿⣛⣳⣤⣀⣀   ",
+            "   ⢠⣧⣶⣥⡤⢄ ⣸⣿⣿⠘  ⢀⣴⣿⣿⡿⠛⣿⣿⣧⠈⢿⠿⠟⠛⠻⠿⠄  ",
+            "  ⣰⣿⣿⠛⠻⣿⣿⡦⢹⣿⣷   ⢊⣿⣿⡏  ⢸⣿⣿⡇ ⢀⣠⣄⣾⠄   ",
+            " ⣠⣿⠿⠛ ⢀⣿⣿⣷⠘⢿⣿⣦⡀ ⢸⢿⣿⣿⣄ ⣸⣿⣿⡇⣪⣿⡿⠿⣿⣷⡄  ",
+            " ⠙⠃   ⣼⣿⡟  ⠈⠻⣿⣿⣦⣌⡇⠻⣿⣿⣷⣿⣿⣿ ⣿⣿⡇ ⠛⠻⢷⣄ ",
+            "      ⢻⣿⣿⣄   ⠈⠻⣿⣿⣿⣷⣿⣿⣿⣿⣿⡟ ⠫⢿⣿⡆     ",
+            "       ⠻⣿⣿⣿⣿⣶⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⡟⢀⣀⣤⣾⡿⠃     ",
+            "                                   ",
             "",
-            "███    ██ ██    ██ ██ ███    ███",
-            "████   ██ ██    ██ ██ ████  ████",
-            "██ ██  ██ ██    ██ ██ ██ ████ ██",
-            "██  ██ ██  ██  ██  ██ ██  ██  ██",
-            "██   ████   ████   ██ ██      ██",
+            "             N E O V I M           ",
           }, "\n"),
         },
       },

@@ -1,4 +1,3 @@
-=== Homebrew Formulae ===
 aom
 aria2
 aribb24
@@ -121,14 +120,12 @@ lzo
 m4
 mailsy
 mbedtls
-mongodb-community-shell
 mongosh
 mpdecimal
 mpfr
 mpg123
 mplayer
 msgpack
-musl-cross
 ncurses
 neovim
 nettle
@@ -201,15 +198,3 @@ zoxide
 zsh-autosuggestions
 zsh-syntax-highlighting
 zstd
-
-=== Homebrew Casks ===
-gstreamer-runtime
-karabiner-elements
-legcord
-podman-desktop
-postman
-qbittorrent
-spaceman
-wine-stable
-zen
-zen-browser

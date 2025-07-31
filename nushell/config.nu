@@ -949,7 +949,7 @@ source ~/.config/nushell/env.nu
 source ~/.zoxide.nu
 
 # Navigation and file management aliases
-alias z = cd
+# alias z = cd
 # alias ls = eza --icons --git --long --tree --level=2 --all --color=auto --group-directories-first --time-style=long-iso --human-readable --sort=extension 
 def stow [name: string] { 
   ^stow --dir=$env.HOME/.dotfiles --target=$env.HOME/.config $name
@@ -1002,7 +1002,7 @@ $env.PATH = ($env.PATH | append [
 $env.GOROOT = '/usr/local/go'
 $env.GOPATH = '~/go'
 
-$env.DOCKER_HOST=unix:///run/user/$UID/podman/podman.sock
+# $env.DOCKER_HOST=unix:///run/user/$UID/podman/podman.sock
 
 # Twitch streaming command
 def twitch [
@@ -1017,9 +1017,12 @@ $quality
 streamlink --twitch-disable-ads $"twitch.tv/($channel)" $selected_quality
 }
 
+# Atuin config
+source ~/.local/share/atuin/init.nu
 
 # Additional environment configurations
 $env.LANG = 'en_US.UTF-8'
 $env.LC_ALL = 'en_US.UTF-8'
 alias t = twitch
-$env.PATH = "/Users/lalocornejo/.bun/bin:/Users/lalocornejo/go/bin:/usr/local/go/bin:/Users/lalocornejo/.local/bin:/Users/lalocornejo/.cargo/bin:/usr/local/bin:/usr/local/sbin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/X11/bin:/Users/lalocornejo/.cargo/bin:/Applications/microchip/xc8/v3.00/bin"
+
+$env.PATH = "/usr/local/bin:/Users/lalocornejo/.bun/bin:/Users/lalocornejo/go/bin:/usr/local/go/bin:/Users/lalocornejo/.local/bin:/Users/lalocornejo/.cargo/bin:/usr/local/bin:/usr/local/sbin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/X11/bin:/Users/lalocornejo/.cargo/bin:/Applications/microchip/xc8/v3.00/bin:/Users/lalocornejo/.opencode/bin"

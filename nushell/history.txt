@@ -460,3 +460,200 @@ bat brew-list.txt
 c
 z .dotfiles
 ls
+clear
+exit
+ls -la
+cd .tmux/
+ls
+clear
+nvim
+clear
+exit
+cd .config/
+yy
+exit
+opencode
+ln -s ~/.config/tmux/tmux.conf ~/.tmux.conf
+tmux
+exit
+.tmux.conf
+nvim .tmux.conf
+exi
+exity
+run ~/.tmux/plugins/tpm/tpm
+start ~/.tmux/plugins/tpm/tpm
+nvim .tmux.conf
+clear
+nvim .tmux.conf
+# type this in terminal if tmux is already running<\n>tmux source ~/.tmux.conf
+clear
+nvmi .tmux.conf
+vim .tmux.conf
+tmux source ~/.tmux.conf
+clear
+lg
+clear
+config nu
+curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
+mkdir ~/.local/share/atuin/<\n>atuin init nu | save ~/.local/share/atuin/init.nu
+mkdir ~/.local/share/atuin/
+atuin init nu | save ~/.local/share/atuin/init.nu
+brew install atuin
+atuin init nu | save ~/.local/share/atuin/init.nu
+config nu
+clear
+nvim .config/tmux/tmux.conf
+c
+clear
+tmux-ai
+c
+clear
+config nu
+clear
+tmuxai 
+clear
+nvim /Users/lalocornejo/.local/share/atuin/init.nu
+mas
+brew install shortcat
+brew install iina
+cd .config/
+yy
+c
+z
+c
+clear
+brew install mas
+clear
+mas searcj proton
+mas search proton
+mas
+mas home
+clear
+btop
+dust
+clear
+croc
+clear
+ani-cli
+brew install rustdesk
+cd Downloads/
+opencode
+cd
+z Documents.
+z
+z Documents/
+opencode
+z
+c
+brew install moonlight
+croc 5044-apple-needle-icon
+croc
+mv wallhaven-5yd911.jpg Downloads/
+ls
+clear
+brew install obsidian
+brew install onedrive
+mas install onedrive
+mas search onedrive
+mas install 823766827
+skhd
+skhd --stop-service
+skhd
+skhd --start-service
+nvim .config/skhd/skhdrc
+skhd --restart-service
+skhd --stop-service
+skhd
+nvim .config/skhd/skhdrc
+skhd
+yabai --stop-service
+clear
+brew install aerospace
+brew install --cask nikitabobko/tap/aerospace
+.config/aerospace/
+ls
+aerospace
+ls
+bat aerospace.toml
+bat old.aerospace.toml
+nvim
+aerospace enable
+aerospace
+aerospace reload
+arospace
+aerospace
+clear
+btop
+nvim aerospace.toml
+clear
+nvim aerospace.toml
+c
+z
+c
+ghostty config
+brew uninstall yabai skhd
+nvim .config/tmuxai/
+tmuxai
+c
+nvim .config/tmuxai/config.yaml
+tmuxai
+x
+c
+mkdir -p ~/Library/LaunchAgents
+mkdir Library/LaunchAgents
+install -d ~/Library/LaunchAgents &> /dev/null && echo "Directory created or already exists"
+echo '<?xml version="1.0" encoding="UTF-8"?><\n><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><\n><plist version="1.0"><\n><dict><\n>    <key>Label</key><\n>    <string>com.github.niklasf.aerospace</string><\n>    <key>ProgramArguments</key><\n>    <array><\n>        <string>/usr/local/bin/aerospace</string><\n>    </array><\n>    <key>RunAtLoad</key><\n>    <true/><\n>    <key>KeepAlive</key><\n>    <true/><\n></dict><\n></plist>' > ~/Library/LaunchAgents/com.github.niklasf.aerospace.plist
+launchctl load ~/Library/LaunchAgents/com.github.niklasf.aerospace.plist
+echo '<?xml version="1.0" encoding="UTF-8"?><\n><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><\n><plist version="1.0"><\n><dict><\n>    <key>Label</key><\n>    <string>com.github.niklasf.aerospace</string><\n>    <key>ProgramArguments</key><\n>    <array><\n>        <string>/usr/local/bin/aerospace</string><\n>    </array><\n>    <key>RunAtLoad</key><\n>    <true/><\n>    <key>KeepAlive</key><\n>    <true/><\n></dict><\n></plist>' | save ~/Library/LaunchAgents/com.github.niklasf.aerospace.plist
+echo '<?xml version="1.0" encoding="UTF-8"?><\n><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><\n><plist version="1.0"><\n><dict><\n>    <key>Label</key><\n>    <string>com.github.niklasfreb.aerospace</string><\n>    <key>ProgramArguments</key><\n>    <array><\n>        <string>/usr/local/bin/aerospace</string><\n>    </array><\n>    <key>RunAtLoad</key><\n>    <true/><\n>    <key>KeepAlive</key><\n>    <true/><\n></dict><\n></plist>' > /tmp/aerospace.plist.tmp && mv /tmp/aerospace.plist.tmp ~/Library/LaunchAgents/com.github.niklasfreb.aerospace.plist && launchctl load ~/Library/LaunchAgents/com.github.niklasfreb.aerospace.plist
+echo '<?xml version="1.0" encoding="UTF-8"?><\n><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><\n><plist version="1.0"><\n><dict><\n>    <key>Label</key><\n>    <string>com.github.niklasfreb.aerospace</string><\n>    <key>ProgramArguments</key><\n>    <array><\n>        <string>/usr/local/bin/aerospace</string><\n>    </array><\n>    <key>RunAtLoad</key><\n>    <true/><\n>    <key>KeepAlive</key><\n>    <true/><\n></dict><\n></plist>' | save -f ~/Library/LaunchAgents/com.github.niklasfreb.aerospace.plist
+launchctl load ~/Library/LaunchAgents/com.github.niklasfreb.aerospace.plist
+ls -l ~/Library/LaunchAgents/com.github.niklasfreb.aerospace.plist
+echo '<?xml version="1.0" encoding="UTF-8"?><\n><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><\n><plist version="1.0"><\n><dict><\n>    <key>Label</key><\n>    <string>com.deskflow.app</string><\n>    <key>ProgramArguments</key><\n>    <array><\n>        <string>/Applications/DeskFlow.app/Contents/MacOS/DeskFlow</string><\n>    </array><\n>    <key>RunAtLoad</key><\n>    <true/><\n>    <key>KeepAlive</key><\n>    <true/><\n></dict><\n></plist>' | save -f ~/Library/LaunchAgents/com.deskflow.app.plist
+launchctl load ~/Library/LaunchAgents/com.deskflow.app.plist
+launchctl unload ~/Library/LaunchAgents/com.deskflow.app.plist
+launchctl load ~/Library/LaunchAgents/com.deskflow.app.plist
+sudo launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.deskflow.app.plist
+tmuxai
+c
+cd Library/LaunchAgents/
+ls
+sudo rm -f com.deskflow.app.plist
+ls
+z .dotfiles/tmux/plugins/
+ls
+cd ..
+rm -rf plugins/
+ls
+btop
+c
+btop
+opencode
+opencode
+c
+btop
+nvim .config/tmux/tmux.conf
+brew install yq
+c
+opencode
+c
+opencode
+nvim .config/tmux/tmux.conf
+tmux source-file ~/.config/tmux/tmux.conf
+nvim .config/tmux/tmux.conf
+tmux source-file ~/.config/tmux/tmux.conf
+nvim .config/tmux/tmux.conf
+nvim
+opencode
+nvim
+c
+arttime -a unix
+clear
+cd .config/aerospace
+opencode
+c
+cd Documents/Code/lalocornejo.github.io/
+c
+z
+cd .config/nushell
+cd .dotfiles/

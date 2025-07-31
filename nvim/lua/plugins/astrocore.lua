@@ -12,7 +12,7 @@ return {
   opts = {
     -- Configure core features of AstroNvim
     features = {
-      large_buf = { size = 1024 * 256, lines = 10000 }, -- set global limits for large files for disabling features like treesitter
+      large_buf = { size = 1024 * 100, lines = 5000 }, -- set global limits for large files for disabling features like treesitter
       autopairs = true, -- enable autopairs at start
       cmp = true, -- enable completion at start
       diagnostics = { virtual_text = true, virtual_lines = false }, -- diagnostic settings on startup
@@ -45,6 +45,10 @@ return {
         spell = true, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
         wrap = true, -- sets vim.opt.wrap
+        lazyredraw = true, -- don't redraw while executing macros
+        regexpengine = 1, -- use old regex engine (faster for some patterns)
+        synmaxcol = 200, -- only highlight first 200 columns
+        updatetime = 300, -- faster completion
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)

@@ -50,18 +50,28 @@ return {
   -- Add status line icon for copilot
   {
     "nvim-lualine/lualine.nvim",
+    optional = true,
     opts = function(_, opts)
-      table.insert(opts.sections.lualine_x, 2, {
+      -- Ensure sections table exists
+      if not opts.sections then return opts end
+      opts.sections.lualine_x = opts.sections.lualine_x or {}
+      
+      table.insert(opts.sections.lualine_x, {
         function()
-          local icon = require("lazyvim.config").icons.kinds.Copilot
-          return icon
+          return ""  -- Copilot icon
         end,
         cond = function()
-          local ok, clients = pcall(vim.lsp.get_active_clients, { name = "copilot", bufnr = 0 })
-          return ok and #clients > 0
+          if vim.g.loaded_copilot then
+            local copilot_status = vim.fn["copilot#Enabled"]()
+            return copilot_status == 1
+          end
+          return false
         end,
-        color = function() return { fg = Snacks.util.color "Special" } end,
+        color = function() 
+          return { fg = "#6CC644" }  -- Green color for active
+        end,
       })
+      return opts
     end,
   },
 }
