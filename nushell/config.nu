@@ -2,6 +2,10 @@
 #
 # version = "0.95.0"
 
+# Starship prompt configuration
+$env.PROMPT_COMMAND = { || create_left_prompt }
+$env.PROMPT_COMMAND_RIGHT = { || create_right_prompt }
+
 # For more information on defining custom themes, see
 # https://www.nushell.sh/book/coloring_and_theming.html
 # And here is the theme collection
@@ -1026,3 +1030,4 @@ $env.LC_ALL = 'en_US.UTF-8'
 alias t = twitch
 
 $env.PATH = "/usr/local/bin:/Users/lalocornejo/.bun/bin:/Users/lalocornejo/go/bin:/usr/local/go/bin:/Users/lalocornejo/.local/bin:/Users/lalocornejo/.cargo/bin:/usr/local/bin:/usr/local/sbin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/X11/bin:/Users/lalocornejo/.cargo/bin:/Applications/microchip/xc8/v3.00/bin:/Users/lalocornejo/.opencode/bin"
+source $"($nu.home-path)/.cargo/env.nu"

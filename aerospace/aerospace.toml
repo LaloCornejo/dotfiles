@@ -12,7 +12,7 @@
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
-     # 'exec-and-forget /usr/local/bin/borders 	style=round	width=8.0 glow=0xff8A2BE2	active_color=0xff8A2BE2',
+     'exec-and-forget /usr/local/bin/borders 	style=round	width=8.0 glow=0xff8A2BE2	active_color=0xff8A2BE2',
     # 'exec-and-forget /usr/local/bin/sketchybar'
 ]
 
@@ -183,7 +183,9 @@ j = ['join-with down', 'mode main']
 k = ['join-with up', 'mode main']
 l = ['join-with right', 'mode main']
 
-# alt-shift-r = ['exec-and-forget /opt/homebrew/bin/sketchybar --reload']
+alt-shift-r = [
+     'exec-and-forget /usr/local/bin/borders 	style=round	width=8.0 glow=0xff8A2BE2	active_color=0xff8A2BE2',
+]
 
 b = [
    'exec-and-forget ~/.config/aerospace/presentation.sh on',
