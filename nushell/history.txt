@@ -1,659 +1,129 @@
-eza
-nvim .config/nushell
-exit
-edit-nu
-exit
-edit-nu
-nvim .config/nushell/env.nu
-config-nu
-config nu
-$env.config.buffer_editor=nvim
-$env.config.buffer_editor= "nvim"
-clear
-config nu
-$env.EDITOR
-$env.config.buffer_editor nvim
-nvim .config/nushell/env.nu
-config nu
-clear
-tmux
-/bin/zsh
-exit
-clear
-exit
-ls
-nushell/
-la
-ls
-config env 
-$nu.config-path
-nvim config.nu
-exit
-config
-config nu
-$nu.config-path
-nvim .dotfiles/nushell/config.nu
-exit
-clear
-tmux new-pane
-clear
-bat .dotfiles/tmux/tmux.reset.conf
-bat .dotfiles/tmux/tmux.conf
-bat .dotfiles/tmux/tmux.reset.conf
-cmatrix
-btop
-clear
-nvim .dotfiles/tmux/tmux.conf
-stow .
-z 
-cd .dotfiles/
-ls
-stow .
-stow . --adopt
-clear
-ls
-cd
-.config/
-ls
-exit
-cmatrix
-clear
-arttime -a unix
-clear
-tmux rezise-pane -R 10
-tmux resize-pane -R 10
-clear
-cmatrix 
-arttime -a unix
-ls
-clear
-Downloads/
-ls
-ls | sort --name
-ls | sort -n
-ls | sort -name
-ls | sort -a
-clear
-ls
-clear
-z
-cd
-clear
-dust
-mailsy
-cmatrix 
-clear
-btop
-clear
-exit
-/usr/local/mysql/bin/mysql -u root -p
-clear
-mysql
-clear
-/usr/local/mysql/bin/mysql -u root -p
-.dotfiles/ghostty/
-ls
-nvim config
-clear
-cd
-clear
-clear
-ollama 
-ollama list model
-ollama list
-ollama run llama3.2:latest
-axel https://objects.githubusercontent.com/github-production-release-asset-2e65be/410749029/7c91e28c-26bb-4009-84f8-24241da1285d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250213%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250213T192502Z&X-Amz-Expires=300&X-Amz-Signature=5cefa67b8a0380ee4fa095ac6eccc15cf165dbb7325dd7cf4f98e60506c97fce&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DSpacedrive-darwin-x86_64.dmg&response-content-type=application%2Foctet-stream
-cd Downloads/
-sudo axel https://objects.githubusercontent.com/github-production-release-asset-2e65be/410749029/7c91e28c-26bb-4009-84f8-24241da1285d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250213%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250213T192502Z&X-Amz-Expires=300&X-Amz-Signature=5cefa67b8a0380ee4fa095ac6eccc15cf165dbb7325dd7cf4f98e60506c97fce&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DSpacedrive-darwin-x86_64.dmg&response-content-type=application%2Foctet-stream
-clear
-ls
-clear
-ls | find *.pdf
-ls | grep *.pdf
-ls | find pdf
-rm `UAEH Services Escolares.pdf` `UNIPI Certificate List (1).pdf` `UNIPI Certificate List.pdf`
-ls | find pdf
-rm Ryanair.pdf `SPEI Payment Data.pdf` `Receipt (1).pdf` Receipt.pdf
+z .config/
 yy
-yazi
-ls
-ls | find mp4
-cd
-ls --tree | find mp4
-ls -alle | find mp4
-ls --threads --du --short-names  | find mp4
-ls --threads
-ls --threads --short-names 
-ls --threads --short-names --du
-ls --threads --short-names --tree
-ls
-mysql
-clear
-exit
-tmux new-window
-e
-exit
-ear
-clear
-exit
-e
-exit
-clear
-c
-e
-exit
-c
-t tarik
-c
-t tarik
-c
-e
-exit
-c
-t tarik
-t tarik 720p60
-c
-t tarik
-t tarik 360p
-c
-t tarik 
-t tarik null
-t tarik 360p
-c
-clear
-exit
-t tarik
-exit
-t tarik
-clear
-exit
-c
-ls
-c
-ls
-z Downloads/
-ls
-l
-ls
 z
-c
-ls
-l
-fv
-clear
-c
-tmux new-window
-c
-mysql
-nvim
-c
-croc 0530-cobra-drink-buenos
-Downloads/
-croc 5010-control-ricardo-llama
+z .config/
 yy
-nu config
-config nu
-c
-yy
-z Downloads/
-croc 7633-crack-caravan-tennis
-c
 z
-mampsql
-mysql
-c
-cmatrix 
-c
-nvim .dotfiles/karabiner/karabiner.json
-c
-nvim .dotfiles/karabiner/karabiner.json
-c
-reload nu
-c
-btop
-c
-nvim .dotfiles/ghostty/config
-c
-arttime -a unix
-c
-.dotfiles/
-c
-nvim .config/tmux/tmux.conf
-exit
-tmux source-file ~/.config/tmux/tmux.conf
-brew uninstall tmux
-brew install tmux
-clear
-cd
-tmux --reload-server
-tmux -f .dotfiles/tmux/tmux.conf
-tmux -f .dotfiles/tmux/tmux.reset.conf
-exit
-x
-c
-which tmux
-/Users/lalocornejo/.config/tmux/tmux.conf
-exit
-z
-c
-exit
-c
-z
-c
-exit
-c
-nvim tmux/tmux.conf
-run '~/.tmux/plugins/tpm/tpm'
-start '~/.tmux/plugins/tpm/tpm'
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-chmod +X '~/.tmux/plugins/tpm/tpm'
-z
-.tmux
-yy
-chmod +X ~/.tmux/plugins/tpm/tpm
-runX ~/.tmux/plugins/tpm/tpm
-run ~/.tmux/plugins/tpm/tpm
-start ~/.tmux/plugins/tpm/tpm
-nvim tmux/tmux.conf
-z
-c
-t xqc
-t celebi_cos
-t neet
-c
-c
-gradle bootRun
-exit
-exit
-lg
-c
-l
-bat README.md
-c
-z |c
-ssh laelo@192.168.8.150
-shh laelo@LÆLÖPi.local
-ssh laelo@LÆLÖPi.local
-ssh laelo@laeloPi.local
-c
-brew install borders
-brew tap FelixKratz/formulae<\n>brew install borders
-nvim .dotfiles/yabai/
-c
-pm ps
-podman ps
-tailscale ip
-brew install kew
-brew install magic-jd/tap/is-fast
-is-fast how to do for loop on rust
-is-fast tenz age
-is-fast vlr.gg
-c
-kew
-.dotfiles/
-yy
-^open .
-yy
-^open .
-lg
-zc
-z c
-z |c
-nvim .dotfiles/nvim/
-c
-nvim
-c
-sge 
-sudo purge
-c
-Documents/Code/
-mkdir glance && cd glance && curl -sL https://github.com/glanceapp/docker-compose-template/archive/refs/heads/main.tar.gz | tar -xzf - --strip-components 2
-mkdir glance ;  cd glance ; curl -sL https://github.com/glanceapp/docker-compose-template/archive/refs/heads/main.tar.gz | tar -xzf - --strip-components 2
-l
-brew search lazypodman
-lazydocker 
-is-fast use lazydocker with podman
-podman system service --time=0<\n>
-.config/lazydocker/
-nvim 
-lazydocker 
-l
-ll
-bat config.yml
-lazydocker config.yml
-lazydocker -c
-lazydocker -h
-lazydocker -f /Users/lalocornejo/.config/lazydocker/config.yml
-which lazydocker
-z
-z "~/Library/Application Support/jesseduffield/lazydocker/config.yml"
-lazydocker -c
-brew uninstall lazydocker
-brew install lazydocker
-lazydocker -c
-.config/lazydocker/
-nvim
-lazydocker -d docker_host: "unix:///run/user/$UID/podman/podman.sock"
-lazydocker -c where
-z
-z "~/Library/Application Support/jesseduffield/lazydocker/"
-lazydocker 
-c
-lazyjournal 
-c
-Documents/Code/glance/
-podman compose up -d
-pm ps
-nvim
-pm ps
-pm restart cc726031ffe8
-nvim docker-compose.yml
-bat .env
-nvim
-pm ps 
-pm rm -f cc726031ffe8
-podman compose up -d
-pm ps
-defaults write -g NSWindowShouldDragOnGesture -bool true
-z
-c
-tailscale ip
-x
-c
-Documents/Code/glance/
-l
-c
-ghostty 
-c
-nvim .dotfiles/yabai/yabairc
-c
-t sideshow 
-is-fast trying to place a banner on obsidian file but it couts as propierties how to solve?
-chatterino
-brew install chatterino
-t dreamcatcher
-sudo purge
-nvim
-c
-restartRCMD
-open /System/Volumes/Data/Applications/rcmd.app
-/System/Volumes/Data/Applications/rcmd.app
-z
-^open /System/Volumes/Data/Applications/rcmd.app
-nvim .hammerspoon/init.lua
-sudo nvim .hammerspoon/init.lua
-c
-z
-c
-c
-tesseract 
-c
-.dotfiles/tmux/
-nvim
-c
-.dotfiles/tmux/
-sudo purge
-c
-.dotfiles/
-^open .
-z|c
-c
-Documents/Code/decentralizedSocial/
-podman ps
-pm machine start
-pm ps
-./a.sh
-./b.sh
-c
-pm ps
-nvim
-./b.sh
-c
-z
-c
-ssh laelo@laeloPi.local
-c
-yy
-cp /Users/lalocornejo/MPLABXProjects/PROY_3.X/dist/default/production/PROY_3.X.production.hex /Users/lalocornejo/OneDrive/
-yy
-c
-mysql 
-c
-clear
-exit
-c
-config nu
-exit
-c
-clear
-exit
-rm -rf .dotfiles
 git clone https://github.com/LaloCornejo/dotfiles.git
+rm -rf .dotfiles
 mv dotfiles/ .dotfiles/
 z .dotfiles/
-nvim
-c
-nushell/
-nvim config.nu
-config nu
-c
-t shanks_ttv best
-t mizubabe best
-t lftoxy_val best
-t caedrel 480p
-t joufa best
-t jouffa best
-t celebi_cos best
-sudo purge
-t lftoxy_val best
-t erpkitten best
-t lftoxy_val best
-t sodapoppin best
-t lftoxy_val best
-c
-z .dotfiles
-git status
-lg
-git status
-ls
-bat brew-list.txt
-c
-z .dotfiles
-ls
-clear
-exit
-ls -la
-cd .tmux/
-ls
-clear
-nvim
-clear
-exit
-cd .config/
+stow .
+z
+z .config/
 yy
-exit
-opencode
-ln -s ~/.config/tmux/tmux.conf ~/.tmux.conf
-tmux
-exit
-.tmux.conf
-nvim .tmux.conf
-exi
-exity
-run ~/.tmux/plugins/tpm/tpm
-start ~/.tmux/plugins/tpm/tpm
-nvim .tmux.conf
+stow . --adopt
+yy
 clear
-nvim .tmux.conf
-# type this in terminal if tmux is already running<\n>tmux source ~/.tmux.conf
-clear
-nvmi .tmux.conf
-vim .tmux.conf
-tmux source ~/.tmux.conf
-clear
-lg
-clear
-config nu
-curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
-mkdir ~/.local/share/atuin/<\n>atuin init nu | save ~/.local/share/atuin/init.nu
-mkdir ~/.local/share/atuin/
-atuin init nu | save ~/.local/share/atuin/init.nu
-brew install atuin
-atuin init nu | save ~/.local/share/atuin/init.nu
-config nu
-clear
-nvim .config/tmux/tmux.conf
-c
-clear
-tmux-ai
-c
-clear
-config nu
-clear
-tmuxai 
-clear
-nvim /Users/lalocornejo/.local/share/atuin/init.nu
-mas
-brew install shortcat
-brew install iina
-cd .config/
 yy
 c
-z
+prefix + I
 c
 clear
-brew install mas
-clear
-mas searcj proton
-mas search proton
-mas
-mas home
-clear
-btop
-dust
-clear
-croc
-clear
-ani-cli
-brew install rustdesk
-cd Downloads/
-opencode
-cd
-z Documents.
-z
-z Documents/
-opencode
-z
-c
-brew install moonlight
-croc 5044-apple-needle-icon
-croc
-mv wallhaven-5yd911.jpg Downloads/
-ls
-clear
-brew install obsidian
-brew install onedrive
-mas install onedrive
-mas search onedrive
-mas install 823766827
-skhd
-skhd --stop-service
-skhd
-skhd --start-service
-nvim .config/skhd/skhdrc
-skhd --restart-service
-skhd --stop-service
-skhd
-nvim .config/skhd/skhdrc
-skhd
-yabai --stop-service
-clear
-brew install aerospace
-brew install --cask nikitabobko/tap/aerospace
-.config/aerospace/
-ls
-aerospace
-ls
-bat aerospace.toml
-bat old.aerospace.toml
-nvim
-aerospace enable
-aerospace
-aerospace reload
-arospace
-aerospace
-clear
-btop
-nvim aerospace.toml
-clear
-nvim aerospace.toml
-c
-z
-c
-ghostty config
-brew uninstall yabai skhd
-nvim .config/tmuxai/
-tmuxai
-c
-nvim .config/tmuxai/config.yaml
-tmuxai
-x
-c
-mkdir -p ~/Library/LaunchAgents
-mkdir Library/LaunchAgents
-install -d ~/Library/LaunchAgents &> /dev/null && echo "Directory created or already exists"
-echo '<?xml version="1.0" encoding="UTF-8"?><\n><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><\n><plist version="1.0"><\n><dict><\n>    <key>Label</key><\n>    <string>com.github.niklasf.aerospace</string><\n>    <key>ProgramArguments</key><\n>    <array><\n>        <string>/usr/local/bin/aerospace</string><\n>    </array><\n>    <key>RunAtLoad</key><\n>    <true/><\n>    <key>KeepAlive</key><\n>    <true/><\n></dict><\n></plist>' > ~/Library/LaunchAgents/com.github.niklasf.aerospace.plist
-launchctl load ~/Library/LaunchAgents/com.github.niklasf.aerospace.plist
-echo '<?xml version="1.0" encoding="UTF-8"?><\n><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><\n><plist version="1.0"><\n><dict><\n>    <key>Label</key><\n>    <string>com.github.niklasf.aerospace</string><\n>    <key>ProgramArguments</key><\n>    <array><\n>        <string>/usr/local/bin/aerospace</string><\n>    </array><\n>    <key>RunAtLoad</key><\n>    <true/><\n>    <key>KeepAlive</key><\n>    <true/><\n></dict><\n></plist>' | save ~/Library/LaunchAgents/com.github.niklasf.aerospace.plist
-echo '<?xml version="1.0" encoding="UTF-8"?><\n><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><\n><plist version="1.0"><\n><dict><\n>    <key>Label</key><\n>    <string>com.github.niklasfreb.aerospace</string><\n>    <key>ProgramArguments</key><\n>    <array><\n>        <string>/usr/local/bin/aerospace</string><\n>    </array><\n>    <key>RunAtLoad</key><\n>    <true/><\n>    <key>KeepAlive</key><\n>    <true/><\n></dict><\n></plist>' > /tmp/aerospace.plist.tmp && mv /tmp/aerospace.plist.tmp ~/Library/LaunchAgents/com.github.niklasfreb.aerospace.plist && launchctl load ~/Library/LaunchAgents/com.github.niklasfreb.aerospace.plist
-echo '<?xml version="1.0" encoding="UTF-8"?><\n><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><\n><plist version="1.0"><\n><dict><\n>    <key>Label</key><\n>    <string>com.github.niklasfreb.aerospace</string><\n>    <key>ProgramArguments</key><\n>    <array><\n>        <string>/usr/local/bin/aerospace</string><\n>    </array><\n>    <key>RunAtLoad</key><\n>    <true/><\n>    <key>KeepAlive</key><\n>    <true/><\n></dict><\n></plist>' | save -f ~/Library/LaunchAgents/com.github.niklasfreb.aerospace.plist
-launchctl load ~/Library/LaunchAgents/com.github.niklasfreb.aerospace.plist
-ls -l ~/Library/LaunchAgents/com.github.niklasfreb.aerospace.plist
-echo '<?xml version="1.0" encoding="UTF-8"?><\n><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><\n><plist version="1.0"><\n><dict><\n>    <key>Label</key><\n>    <string>com.deskflow.app</string><\n>    <key>ProgramArguments</key><\n>    <array><\n>        <string>/Applications/DeskFlow.app/Contents/MacOS/DeskFlow</string><\n>    </array><\n>    <key>RunAtLoad</key><\n>    <true/><\n>    <key>KeepAlive</key><\n>    <true/><\n></dict><\n></plist>' | save -f ~/Library/LaunchAgents/com.deskflow.app.plist
-launchctl load ~/Library/LaunchAgents/com.deskflow.app.plist
-launchctl unload ~/Library/LaunchAgents/com.deskflow.app.plist
-launchctl load ~/Library/LaunchAgents/com.deskflow.app.plist
-sudo launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.deskflow.app.plist
-tmuxai
-c
-cd Library/LaunchAgents/
-ls
-sudo rm -f com.deskflow.app.plist
-ls
-z .dotfiles/tmux/plugins/
-ls
-cd ..
-rm -rf plugins/
-ls
-btop
-c
-btop
-opencode
-opencode
-c
-btop
-nvim .config/tmux/tmux.conf
-brew install yq
-c
-opencode
-c
-opencode
-nvim .config/tmux/tmux.conf
-tmux source-file ~/.config/tmux/tmux.conf
-nvim .config/tmux/tmux.conf
-tmux source-file ~/.config/tmux/tmux.conf
-nvim .config/tmux/tmux.conf
-nvim
-opencode
+cd .dotfiles
 nvim
 c
-arttime -a unix
-clear
-cd .config/aerospace
-opencode
-c
-cd Documents/Code/lalocornejo.github.io/
-c
-z
-cd .config/nushell
+nvim
 cd .dotfiles/
+opencode
+nvim
+c
+yy
+ls -la
+ls -a
+nvim .stowrc
+stow .
+stow --adopt .
+^stow --adopt .
+brew services start borders
+z
+chmod +x .config/borders/bordersrc
+borders
+btop
+borders
+brew services restart borders
+z .config/
+yy
+nvim borders/bordersrc
+borders
+./borders/bordersrc
+brew services stop borders
+./borders/bordersrc
+borders active_window=0xff00ff
+borders active_color=0xff00ff
+nvim borders/bordersrc
+./borders/bordersrc
+nvim borders/bordersrc
+nvim
+c
+brew uninstall podman-desktop
+brew install podman
+podman ps
+podman machine start
+podman machine init
+podman mahicne start
+podman machine start
+sudo /usr/local/Cellar/podman/5.5.2_1/bin/podman-mac-helper install<\n>        podman machine stop; podman machine start
+c
+podman run -it browsh/browsh
+podman ps -a
+podman rm 
+podman rm f22eb4155ff3
+podman images
+podman images rm docker.io/browsh/browsh
+podman images rm browsh/browsh
+podman images  browsh/browsh -r
+podma images -h
+podman images -h
+podman image rm browsh/browsh
+podman images
+pm
+pm ps
+clear
+pm machine stop
+c
+btop
+z .config/btop
+ls
+nvim btop.conf
+btop
+netscann
+netscannn
+cargo install netscanner
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh<\n>
+source $"($nu.home-path)/.cargo/env.nu"
+z
+c
+cargo install netscanner
+netscanner
+sudo netscanner
+clear
+z .dotfiles/
+ld
+arttime -a unix
+c
+z
+c
+mkdir -p ~/.config
+cd .config/
+ls
+cat ~/.config/starship.toml
+cp starship.toml starship.toml.bak
+ls
+tmuxai
+c
+clear
+c
+clear
+cd .dotfiles/
+lg
+nvim .gitignore
+lg
+nvim .gitignore
+lg
+git status --ignored --exclude-standard
+git status --ignored
+vim .gitignore
+tmuxai
+git status
+git status --ignored
