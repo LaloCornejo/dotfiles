@@ -59,7 +59,6 @@
                     },
                     {
                         "description": "Map Left Shift + Right Shift to CAPS",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
@@ -121,14 +120,6 @@
                             "to": [{ "key_code": "right_shift" }]
                         }
                     ]
-                },
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 33424,
-                        "vendor_id": 1452
-                    },
-                    "treat_as_built_in_keyboard": true
                 }
             ],
             "fn_function_keys": [

@@ -1,8 +1,9 @@
 theme = Snazzy
-background-blur-radius = 85
-background-opacity = .15
+background-blur-radius = 60
+background-opacity = .35
+background = #000000
 font-family = JetBrainsMono Nerd Font
-font-size = 22
+font-size = 18
 font-thicken = true
 cursor-style-blink = true
 cursor-invert-fg-bg = true

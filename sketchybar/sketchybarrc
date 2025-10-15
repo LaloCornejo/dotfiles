@@ -1,3 +1,30 @@
-#!/usr/bin/env lua
+CONFIG_DIR="$HOME/.config/sketchybar"
+. "$CONFIG_DIR/globals.sh"
+. "$CONFIG_DIR/items.sh"
 
-require("init")
+# Single batch configuration for better performance
+sketchybar \
+    --bar "${SB_BAR[@]}" \
+    --default "${SB_DEFAULT[@]}" \
+    --add event window_change \
+    --add event front_app_switched
+
+###### Optimized Minimal Bar ######
+# Left side (unchanged)
+sb_separator left 14 14
+sb_date left
+sb_separator left 20 16
+sb_spaces left
+sb_separator left 20 16
+sb_current_app left
+
+# Right side decorative elements
+sb_separator right 16 16
+sb_braille_art right
+sb_separator right 8 8
+sb_clock right
+sb_separator right 8 8
+sb_battery right
+
+# Single update and trigger
+sketchybar --update --trigger space_change

@@ -127,3 +127,1091 @@ vim .gitignore
 tmuxai
 git status
 git status --ignored
+lg
+yy
+z
+c
+ani-cli
+rm -rf "$(brew --prefix)/share/ani-cli" "$(brew --prefix)/bin/ani-cli" "$(brew --prefix)/bin/UI" "$(brew --prefix)"/bin/player_*
+git clone "https://github.com/pystardust/ani-cli.git" && cd ./ani-cli
+git clone "https://github.com/pystardust/ani-cli.git" and cd ./ani-cli
+ls
+ls -a
+git clone "https://github.com/pystardust/ani-cli.git"
+z ani-cli/
+cp ./ani-cli "$(brew --prefix)"/bin
+brew install curl grep aria2 ffmpeg git fzf yt-dlp
+c
+cd
+brew install curl grep aria2 ffmpeg git fzf yt-dlp
+c
+ani-cli 
+whoami
+tailscale ip
+ip
+ippfind 
+ani-cli 
+c
+t sideshow best
+t sideshow
+cd Applications/
+curl https://releases.arc.net/release/Arc-latest.dmg
+curl -fsSL https://releases.arc.net/release/Arc-latest.dmg
+ls
+c
+opencode
+c
+z
+c
+tailscal ip
+tailscale ip
+sudo lsof -iTCP -sTCP:LISTEN -n -P | grep 22
+c
+clear
+c
+nvim .config/aerospace/aerospace.toml
+clear
+croc 6520-lunar-linear-mask
+croc --classic
+croc 6520-lunar-linear-mask
+mv wallhaven-5yd911.jpg Downloads/
+cd Downloads/
+croc 3242-america-limit-dolby
+c
+t sideshow
+c
+brew uninstall borders
+clear
+btop
+c
+yy
+c
+clear
+ls
+z
+z Documents/
+mkdir IA_Sch
+cd IA_Sch/
+c
+clear
+z Documents/IA_Sch/
+touch a.cpp
+nvim a.cpp
+touch Makefile
+nvim Makefile
+z
+z Downloads/
+ls
+curl send wallhaven-5yd911.jpg
+croc send wallhaven-5yd911.jpg
+c
+btop
+c
+sudo netscanner 
+c
+mas search goodnotes
+make run
+make 
+make all
+mas install 1444383602
+make all
+c
+make all
+makes run
+make run
+make all
+make run
+make all
+make run
+nvim  a.cpp
+make all
+pwd
+z
+z Documents/IA_Sch/
+ls
+make all
+make run
+make all
+make run
+make all
+make run
+make all
+make run
+c
+mas search 'Ublock Origin Lite'
+make all
+make run
+c
+make all
+make run
+opencode
+make all
+make run
+opencode
+make all
+make run
+make all
+make run
+make all
+make run
+clear
+make run
+make all
+c
+make run
+c
+nvim a.cpp
+c
+z
+ls
+cd Documents/
+cd Code
+mkdir PW
+ls
+z PW/
+ls
+c
+tty-clock 
+clear
+make all
+z..
+z ..
+ls
+z
+z Documents/IA_Sch/
+ls
+make all
+make run
+make all
+make run
+make all
+make run
+make all
+make run
+make all
+make run
+make all
+make run
+make all
+make run
+make all
+make run
+make all
+make run
+make all
+make run
+make all
+make run
+make all
+make run
+make all
+make run
+make all
+make run
+clear
+nvim
+clear
+tty-clock 
+clear
+c
+t gofns best
+ani-cli
+c
+make all
+mak erun
+make run
+make all
+make run
+make all
+make run
+clear
+make all
+make run
+clear
+opencode
+make run
+make all
+make run
+make all
+make run
+make all
+make run
+make all
+opencode\
+opencode
+c
+make all
+make ru
+make run
+make all
+make run
+opencode
+c
+make all
+make run
+c
+make run
+make all
+make run
+c
+cd Documents/
+ls
+cd IA_Sch/
+opencode
+make all
+make run
+c
+make all
+make run
+make all
+make run
+make all
+make run
+clear
+opencode
+make all
+make run
+make all
+make run
+ftp ftp.dlptest.com
+which bash
+./bin/bash
+/bin/bash
+c
+ls
+yy
+z ..
+z Code/PW/
+ssh lalo@100.120.93.35
+tailscale ssh lalo@100.120.93.35
+clear
+telnet
+clear
+z
+z Documents/IA_Sch/
+make all
+make run
+make all
+make run
+c
+clear
+defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
+defaults write -g QLPanelAnimationDuration -float 0
+defaults write NSGlobalDomain NSWindowResizeTime -float 0.001<\n>
+defaults write com.apple.finder DisableAllAnimations -bool true<\n>
+defaults write com.apple.dock launchanim -bool false<\n>
+defaults write com.apple.dock expose-animation-duration -float 0.1<\n>
+defaults write com.apple.Dock autohide-delay -float 0<\n>
+sudo purge<\n>
+sudo sysctl debug.lowpri_throttle_enabled=0<\n>
+sudo sysctl debug.lowpri_throttle_enabled=1<\n>
+sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder<\n>
+defaults write NSGlobalDomain KeyRepeat -int 0<\n>
+top -o cpu<\n>
+btop
+c
+cmatrix
+c
+btop
+clear
+z
+z Downloads/
+c
+clear
+nvim
+c
+z
+c
+z Downloads/
+yy
+opencode
+c
+yy
+c
+z
+nvim .config/ghostty/
+c
+yy
+y
+live-server
+http-server 
+btop
+neofetch
+brew install neofetch
+neofetch
+t tarik best
+ani-cli 
+ani-cli
+t tarik best
+c
+yy
+z .dotfiles
+ls
+rm -rf nvim.bak/
+ls
+mv nvim nvim.bak
+ls
+croc 3767-quota-ammonia-java
+nvim
+ls
+z
+z .config/
+ls
+rm -f nvim
+ls
+z
+ln -s .dotfiles/nvim .config/nvim
+z .config/
+ls
+nvim
+rm nvim
+z
+ln .dotfiles/nvim .config/nvim
+ln -d .dotfiles/nvim .config/nvim
+mkln -d .dotfiles/nvim .config/nvim
+cd .dotfiles/
+.stow
+stow .
+stow . --adopt
+stow .
+stow --adopt .
+stow --adopt
+stow .
+cd ~
+z .dotfiles
+cd
+stow -d .dotfiles -t . nvim
+ln -s ~/.dotfiles/nvim ~/.config/nvim
+nvim
+cd .config/
+ls
+tmuxai 
+c
+nvim
+z
+nvim Documents/Code/Cplus.plus/
+t icefire
+t scomfy
+t icefire_vr
+t scomfy
+c
+sudo purge
+t scomfy
+z Downloads/
+curl -fsSL https://kindavim.app/releases/kindaVim.zip
+croc 6614-minimum-food-pedro
+croc 6533-spiral-service-urgent
+yy
+z
+c
+t tarik best
+t deme best
+t squchan 
+c
+t lftoxy_val
+clear
+brew install prolog
+t ohnepixel 
+t eevi
+clear
+pwd
+cd Documents/School/IA_Sch/
+toouch hechos.pl
+touch hechos.pl
+nvim hechos.pl
+clear
+t lovelycutemute
+cd Documents/School.
+cd Documents/School
+ls
+cd Web/
+ls
+mkdir P2
+cd p2
+touch index.html
+nvim index.html
+live-html
+nvim Documents/School/Web/P2/index.html
+http-server
+sudo purge
+t gofns 
+yabai --start-service
+brw install yabai
+brew install yabai
+brew install skhd
+yabai --start-service
+skhd --start-service
+yabai --srart-service
+yabai --start-service
+c
+t chud_vr
+t stayuuki
+t aeriytheneko
+t staryuuki
+t favorite
+yabai --stop-service
+skhd --stop-service
+c
+c
+t gofns
+c
+z Documents/School/Web/
+ls
+mkdir P3
+cd P3
+ls
+touch index.html
+pwd
+z Documents/School/Web/P3/
+t gofns
+nvim index.html
+z
+mv `Downloads/Copia de ACT 13 UNIDAD 2.docx.pdf` Documents/School/Web/Act13Unidad2_ApellidoPaterno_ApellidoMaterno_Nombre.pdf
+z Documents/School/Web/
+yy
+http-server 
+c
+z
+c
+t xqc
+t sideshow
+t gofns
+c
+pwd
+z Documents/School/IA_Sch/
+ls
+pwd
+nvim hechos.pl
+touch recursividad.pl
+nvim recursividad.pl
+pwd
+ls
+curl vlr.gg
+curl http://vlr.gg
+c
+nvim recursividad.pl
+ani-cli
+c
+t scomfy
+t gavrilka
+c
+ls
+touch sem.pl
+nvim sem.pl
+pl
+pwd
+nvim sem.pl
+ssh Lalo@100.120.93.35
+ssh 100.120.93.35
+whoami
+c
+clear
+ls
+cd Documents/School/Web/
+mkdir P3
+z P3/
+touch index.html
+z
+c
+cd Documents/School/Web/P3/
+nvim index.html
+ls
+http-server 
+z ..
+z P4/
+http-server 
+c
+yy
+z Documents/School/IA_Sch/
+nvim aj.cpp
+ls
+touch a.pl
+t favorite
+t tarik
+t xqc
+tmux list
+tmux list-sessions
+c
+c
+z Documents/School/Web/
+ls
+mkdir P5
+z P5
+touch index.html
+pwd
+z Documents/School/Web/P5/
+networksetup -setairportpower en0 off
+networksetup -setairportpower en0 on
+nvim index.html
+networksetup -setairportpower en0 off
+c
+c
+z
+http-server
+c
+z
+c
+ani-cli
+z Downloads/
+croc 6753-cliff-engine-tourist
+croc send `Implementacion de la ia en la robotica.pdf`
+yt
+c
+defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false<\n>
+defaults write NSGlobalDomain NSWindowResizeTime -float 0.001<\n>
+defaults write com.apple.finder DisableAllAnimations -bool true<\n>
+defaults write com.apple.dock launchanim -bool false<\n>
+defaults write com.apple.dock autohide-delay -float 0<\n>
+defaults write com.apple.dock expose-animation-duration -float 0.1<\n>
+killall Dock<\n>
+defaults write com.apple.universalaccess reduceTransparency -bool true<\n>
+defaults write com.apple.universalaccess reduceTransparency -bool true
+defaults write -g QLPanelAnimationDuration -float 0<\n>
+killall Dock<\n>
+sudo purge
+top
+defaults write com.apple.Safari WebKitInitialTimedLayoutDelay 0.25<\n>
+z Documents/School/Web/
+mkdir Ex
+cd Ex/
+touch index.html
+z Documents/School/Web/Ex/
+networksetup -setairportpower en0 off
+networksetup -setairportpower en0 on
+t xqc
+t chud_vr
+t dessydragon
+t dessydragon 760p
+t dessydragon best
+t chud_vr
+clear
+networksetup -setairportpower en0 off
+networksetup -setairportpower en0 on
+t chud_vr
+c
+z Documents/School/Web/
+mkdir Pr1
+z Pr1/
+touch index.html
+z Documents/School/Web/Pr1/
+nvim index.html
+networksetup -setairportpower en0 off
+networksetup -setairportpower en0 on
+http-server
+c
+t KimmyKat_
+t squchan
+t xqc
+t aeriytheneko
+t kimmykat_
+t nayuki
+t tarik
+t xqc
+c
+t yammykko
+t https://www.twitch.tv/videos/2557485403 best
+t aeriytheneko
+t staryuuki
+t xqc
+ani-cli
+c
+t kimmykat_
+t dessydragon best
+c
+z Downloads/
+opencode
+z Images/
+z Reference_Images/
+rm  *
+t iaaras2
+c
+networksetup -setairportpower en0 off
+networksetup -setairportpower en0 on
+c
+z Documents/School/IA_Sch/
+ls
+touch veneno.pl
+nvim veneno.pl
+c
+z
+z Downloads/
+mv `Copia de ACT 19 UNIDAD 3.docx.pdf` Act19Unidad3_Cornejo_Clavel_Jesus_Eduardo.pdf
+t aeriytheneko
+z
+mkdir tmp
+c
+nvim .zshrc
+c
+bre install ice
+brew install ice
+ice
+brew uninstall ice
+c
+cmatrix 
+c
+brew install --cask jordanbaird-ice
+brew install loop
+brew uninstall --cask jordanbaird-ice
+c
+networksetup -setairportpower en0 on
+networksetup -setairportpower en0 off
+networksetup -setairportpower en0 on
+t xqc best
+clear
+t pippa 
+t pippa
+t xqc best
+t galaisha best
+t saintsakura
+t thenicolet
+t favorite
+c
+z Documents/School/Web/
+mkdir P6
+z p6
+touch index.html
+nvim index.html
+t xqc
+t favorite
+t staryuuki
+t xqc
+networksetup -setairportpower en0 off
+networksetup -setairportpower en0 on
+t xqc
+t gofns
+brew install rufus
+brew upgrade --all
+croc 3110-garden-enigma-order
+mv DietPi_RPi234-ARMv8-Trixie_AlloGUI.img.xz Downloads/
+ls
+rm -rf `cisco it essentials virtual desktop/`
+ls
+z
+ssh lalocornejo@laelopi.local
+ssh root@laeloPi.local
+ssh root@192.168.0.100
+ssh root@laeloPi.local
+clear
+brew install carapace<\n>
+cx Documents/
+z
+cx Documents/
+clear
+z
+nvim .dotfiles/ghostty/config
+zi
+c
+zi
+c
+hostname -i
+hostname
+hostname -d
+networksetup 
+curl ipconfig.me
+curl ifconfig.me
+arp -a
+arp -n
+arp -S L350
+arp -d l350
+t  aeirytheneko
+t solodolo
+t yarify
+t feyy
+t aeriytheneko
+t xqc
+brew install qutebrowser
+z .dotfiles/
+ls
+c
+c
+z
+z .qutebrowser/
+ls
+touch config.py
+nvim config.py
+ls
+networksetup -setairportpower en0 off
+networksetup -setairportpower en0 on
+t xqc
+t tarik
+c
+t scomfy best
+c
+z
+c
+tailscale ssh lalo@100.120.93.35
+tailscale ssh 100.120.93.35
+ssh lalo@100.120.93.35
+tailscale ssh 100.120.93.35
+brew upgrade tailscale
+tailscale up
+tailscale server upgrade
+sudo systemctl restart tailscaled
+c
+brew install borders
+borders --start-service
+man borders
+brew services start borders
+z .config/borders
+cx
+ls
+nvim bordersrc
+z
+c
+borders
+networksetup -setairportpower en0 off
+networksetup -setairportpower en0 on
+tailscale ssh lalo@100.120.93.35
+c
+MagickCore-config 
+brew install is-fast
+is-fast jquery
+is-fast Investiga las principales empresas de la web que usan jQuery:<\n>
+is-fast jquery vs js
+is-fast DOM
+cx Documents/School/Web/
+touch P7/index.html
+mkdir P7
+touch P7/index.html
+cx P7/
+nvim index.html
+c
+is-fast yabai bottom status bar name program?
+brew install sketchybar
+mkdir -p ~/.config/sketchybar/plugins
+mkdir ~/.config/sketchybar/plugins
+cp /usr/local/opt/sketchybar/share/sketchybar/examples/sketchybarrc ~/.config/sketchybar/sketchybarrc
+cp -r /usr/local/opt/sketchybar/share/sketchybar/examples/plugins/ ~/.config/sketchybar/plugins/
+chmod +x ~/.config/sketchybar/plugins/*
+c
+brew services start sketchybar
+nvim .dotfiles/sketchybar/
+z .dotfiles/sketchybar/
+ls
+cd ..
+cp mv sketchybar/ sketchybar.bak/
+mv sketchybar/ sketchybar.bak/
+mkdir sketchybar/
+z sketchybar/
+z ..
+rm -rf sketchybar/
+z
+mv Downloads/sketchybar/ .dotfiles/
+cx .dotfiles/
+brew services restart sketchybar
+brew services stop sketchybar
+sketchybar
+chmod +x ~/.config/sketchybar/plugins/*
+chmod +x ~/.config/sketchybar/plugins-desktop/*
+chmod +x ~/.config/sketchybar/plugins-laptop/*
+sketchybar
+brew services start sketchybar
+z
+mv `Downloads/Copia de ACT 23 UNIDAD 3.docx.pdf` Documents/School/Web/Act23Unidad3_Cornejo_Clavel_Jesus_Eduardo.pdf
+ear
+c
+config nu
+is-fast jquery add to projects html
+is-fast jquery animations better?
+is-fast DOM in html
+? html
+c
+nvim .dotfiles/ghostty/config
+cx .dotfiles/
+ranger
+z
+mv Downloads/sketchybar/ .dotfiles/
+brew services restart sketchybar
+chmod +x ~/.config/sketchybar/*.sh
+brew services restart sketchybar
+cd .dotfiles/
+chmod +x ~/.config/sketchybar/plugins/*
+chmod +x ~/.config/sketchybar/items/*
+chmod +x ~/.config/sketchybar/helper/*
+chmod +x ~/.config/sketchybar/cache/*
+brew services restart sketchybar
+chmod +x ~/.config/sketchybar/*
+brew services restart sketchybar
+brew services start sketchybar
+brew services stop sketchybar
+sketchybar
+chmod +x ~/.config/sketchybar/plugins/status/*
+sketchybar
+opencode
+c
+sketchybar 
+opencode
+c
+sketchybar 
+opencode
+sketchybar
+opencode
+sketchybar
+opencode
+sketchybar 
+sketchybar
+sketchybar 
+brew install --cask font-sketchybar-app-font<\n>
+brew reinstall --cask font-sketchybar-app-font
+brew install --cask font-sketchybar-app-font
+sketchybar 
+sketchybar
+opencode
+nvim sketchybar/
+chmod +x ~/.config/sketchybar/*
+sketchybar --reload
+sketchybar
+killall sketchybar
+sketchybar
+opencde
+sketchybar 
+opencode
+sketchybar 
+sketchybar
+brew services stop sketchybar
+killall sketchybar
+brew services start sketchybar
+killall sketchybar
+aerospace list-workspaces --focused
+q
+brew uninstall borders
+borders
+killall borders
+c
+bat .dotfiles/aerospace/aerospace.toml
+opencode
+c
+t aeriytheneko best
+t favorite
+c
+cx .config/
+cx tmux
+./install.sh
+c
+cx plugins/
+<\n>clear
+z ...
+z tmux/
+main
+killall aerospace
+c
+brew services restart sketchybar
+t favorite
+nvom .dotfiles/ghostty/config
+? sketchybar window manager netive macos no yabai nor aerospace
+nvim .dotfiles/ghostty/config
+nvim .dotfiles/sketchybar/
+cx .dotfiles/sketchybar/
+ls -la
+yy
+grep font
+? ghostty background color configuration
+c
+z .dotfiles/sketchybar/
+ls
+brew services restart sketchybar
+sketchybar --reload
+brew services stop  sketchybar
+sketchybar
+./.dotfiles/sketchybar/workspace_detector.swift
+swiftc workspace_detector.swift -o workspace_detector<\n>
+z .dotfiles/sketchybar/
+swiftc workspace_detector.swift -o workspace_detector
+./workspace_detector
+swiftc workspace_detector.swift -o workspace_detector
+./workspace_detector
+swiftc workspace_detector.swift -o workspace_detector
+./workspace_detector
+swiftc workspace_detector.swift -o workspace_detector
+./workspace_detector
+./space_switch.sh 3
+./workspace_detector.sh get
+./space_switch.sh
+./workspace_detector.sh get
+./space_switch_2.sh
+./switch_space_2.sh
+./workspace_detector.sh get
+z ..
+ls
+z
+nvim .hammerspoon/init.lua
+z .dotfiles/sketchybar/
+./workspace_detector.sh get
+c
+nvim /Users/lalocornejo/.hammerspoon/sketchybar_spaces.lua
+z
+cx .hammerspoon/
+nvim /Users/lalocornejo/.hammerspoon/init.lua
+./workspace_detector.sh get
+brew services start sketchybar
+opencode
+opencode
+z
+opencode
+z .dotfiles/
+z sketchybar/
+./workspace_detector.sh get
+z .hammerspoon/sketchybar_spaces.lua
+nvim sketchybarrc
+networksetup -setairportpower en0 off
+networksetup -setairportpower en0 on
+ping google.com 
+ping google.com
+z .dotfiles/sketchybar/
+z .dotfiles/sketchybar/
+neofetch
+sketchybar  --reload
+./workspace_monitor.sh start
+clear
+z
+nvim .hammerspoon/init.lua
+nvim .hammerspoon/sketchybar_spaces.lua
+ps | grep monitor*
+ps | grep "workspace_monito"
+killall workspace
+killall workspace_monitor
+./.dotfiles/sketchybar/workspace_monitor.sh update
+? gram windows from anywhere in windows how to enable?
+sketchybar  --reload
+nvim .dotfiles/sketchybar/
+sketchybar  --reload
+sketchybar  --exit
+brew services stop sketchybar
+sketchybar 
+yy
+sketchybar --reload
+yy
+sketchybar --reload
+yy
+sketchybar --reload
+yy
+sketchybar --reload
+yy
+sketchybar --reload
+yy
+c
+opencode
+? make neofetch in macos better do not use the pple have custom asciii animation 
+z
+neofetch
+nvim .config/neofetch/config.conf
+z .config/neofetch/
+ls
+touch ascii.txt
+nvim ascii.txt
+neofetch
+yy
+neofetch
+mvo, ascii.txt
+nvim ascii.txt
+neofetch
+nvim ascii.txt
+ae
+neofetch
+nvim ascii.txt
+neofetch
+c
+neofetch
+opencode
+c
+tty-clock 
+clear
+c
+neofetch
+networksetup -setairportpower en0 off
+networksetup -setairportpower en0 on
+c
+z
+z .hammerspoon/
+nvim sketchybar_spaces.lua
+c
+opencode
+c
+z
+c
+yt
+clear
+btop
+sudo purge 
+c
+t tarik
+c
+? start vm workspace machine on startup
+ln -s "/Users/lalocornejo/Library/CloudStorage/OneDrive-Personal/Obsidian" "/Users/lalocornejo/Library/Mobile Documents/iCloud~md~obsidian/Documents/Obsidian"<\n>
+ln -s "/Users/lalocornejo/Library/CloudStorage/OneDrive-Personal/Obsidian" "/Users/lalocornejo/Library/Mobile Documents/iCloud~md~obsidian/Laelo"
+ln -s "/Users/lalocornejo/Library/CloudStorage/OneDrive-Personal/Obsidian" "/Users/lalocornejo/Library/Mobile Documents/iCloud~md~obsidian/Laelo/"
+cx /Users/lalocornejo/Library/Mobile Documents/iCloud~md~obsidian/
+cx "/Users/lalocornejo/Library/Mobile Documents/iCloud~md~obsidian/"
+ln -s "/Users/lalocornejo/Library/CloudStorage/OneDrive-Personal/Obsidian" "/Users/lalocornejo/Library/Mobile Documents/iCloud~md~obsidian/Documents"
+z
+c
+man yewtube
+? yewtube use iina
+tldr yt
+sudo purge
+man yt
+t gofns
+c
+yt -h
+yt set player iina
+yt -h
+open -a iina
+open iina
+yt set player /System/Volumes/Data/Applications/IINA.app
+clear
+t niiiny
+t xqc
+t tarik
+ping google.com
+c
+c
+c
+sudo purge
+z .dotfiles/sketchybar/
+t staryuuki
+opencode
+yt 
+btop
+t iino
+t gofns
+? how to play multiple videos on ipad
+c
+cx Documents/School/IA_Sch/
+ping google.com
+c
+networksetup -setairportpower en0 off
+networksetup -setairportpower en0 on
+? hadesA how to make rpepositions
+? hariesA how to make a knowledge base
+c
+c
+c
+? vlr.gg
+? vlr.gg g2 vs t1 champs 2025
+c
+? balon dor when time?
+clear
+? rojadireecta.com
+c
+arttime 
+cmatrix
+t gofns
+c
+btop
+brew uninstall sketchybar
+killall aerospace
+sudo pkill docker
+? restart macos docker
+? restart macos contoll center
+killall SystemUIServer                                                                    y
+killall SystemUIServer
+killall Dock
+hyperfine 
+hyperfine 'seconds 0.3'
+hyperfine -h
+hyperfine -N
+hyperfine 'echo "hello"'
+cx .dotfiles/
+opencode
+http-server 
+exit
